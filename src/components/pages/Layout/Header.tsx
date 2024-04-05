@@ -44,12 +44,10 @@ const Header = () => {
           })}
         </ul>
 
-        {/* Sign in and Sign up buttons */}
         <div className="hidden xl:inline-block lg:ml-auto ">
-          <CustomButton />
+          <CustomButton>Contact Us</CustomButton>
         </div>
 
-        {/* Mobile menu */}
         <div
           className={`navbar-menu fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto ${
             isMenuOpen ? "block" : "hidden"
