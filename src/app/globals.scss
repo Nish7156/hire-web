@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.container {
+  @apply w-full max-w-[1144px] mx-auto px-4 md:px-6;
+}
+
+.custom-buttom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+  position: relative;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #1ad9df, #a824fe);
+  overflow: hidden;
+  border-radius: 30px;
+  color: white;
+  border: 2px solid white;
+}
+.custom-buttom:hover {
+  border-width: 2px;
+  color: black;
+  border: 2px double transparent;
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)),
+    radial-gradient(circle at left top, rgb(1, 110, 218), rgb(217, 0, 192));
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+.about-cover-banner {
+  position: relative;
+  width: 1440px;
+  height: 399px;
+  margin: 0 auto;
+  background: url("") no-repeat center;
+  background-size: cover;
+  backdrop-filter: blur(25px);
+}
+
+.leverage-expertise {
+  position: relative;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 80px;
+  text-align: left;
+  background: linear-gradient(135deg, #1ad9df, #a824fe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
