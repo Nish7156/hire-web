@@ -1,5 +1,6 @@
 import { QuestionsSection } from "@/components/Utility/CommonComponent";
 import StillHaveQuestions from "@/components/pages/Home/StillHaveQuestions";
+import AgileTeam from "@/components/pages/Services/AgileTeam";
 import FeactursSection from "@/components/pages/Services/FeactursSection";
 import HowItWorks from "@/components/pages/Services/HowItWorks";
 import MyComponent from "@/components/pages/Services/ServiceHero";
@@ -11,6 +12,7 @@ function page() {
     <div>
       <MyComponent />
       <FeactursSection />
+      <AgileTeam/>
       <HowItWorks />
 
       <div className="container py-10 md:py-[99px]">
