@@ -67,7 +67,23 @@
 .heading-text {
   @apply text-[30px] md:text-[60px] leading-[50px] md:leading-[80px] font-bold;
 }
+.heading2-text {
+  @apply text-[30px] md:text-[40px] leading-[50px] md:leading-[60px] font-medium;
+}
 
-.normal-text{
-  @apply text-lg
+.normal-text {
+  @apply text-lg;
+}
+
+.gradient-text {
+  display: block;
+  position: relative;
+
+  text-align: left;
+  text-transform: capitalize;
+  white-space: nowrap;
+  background: linear-gradient(135deg, #1ad9df, #a824fe);
+  z-index: 1;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

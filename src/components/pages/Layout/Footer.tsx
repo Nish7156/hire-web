@@ -5,7 +5,7 @@ import React from "react";
 function Footer() {
   return (
     <>
-      <div className=" border-0 md:border-t-[1px] my-20 ">
+      <div className=" border-0 md:border-t-[1px] ">
         <div className="container py-[62px] border-b-[1px]">
           <div className=" flex justify-between flex-col md:flex-row">
             <div className=" max-w-[520px] border-0 md:border-r-[1px]">

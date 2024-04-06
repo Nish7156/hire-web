@@ -35,12 +35,16 @@ const Header = () => {
         </div>
 
         <ul
-          className={`hidden lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6 ${
+          className={`hidden lg:flex lg:mx-auto  lg:items-center lg:w-auto lg:space-x-6 ${
             isMenuOpen ? "" : "hidden"
           }`}
         >
-          {Menus.map((data: any) => {
-            return <MenuItem title={data.title} link={data.link} />;
+          {Menus.map((data: any, index: number) => {
+            return (
+              <div key={index} className="">
+                <MenuItem title={data.title} link={data.link} />
+              </div>
+            );
           })}
         </ul>
 
@@ -75,8 +79,12 @@ const Header = () => {
 
           {/* Mobile menu items */}
           <ul>
-            {Menus.map((data: any) => {
-              return <MenuItem title={data.title} link={data.link} />;
+            {Menus.map((data: any, index: number) => {
+              return (
+                <div key={index} className="">
+                  <MenuItem title={data.title} link={data.link} />
+                </div>
+              );
             })}
           </ul>
 

@@ -1,0 +1,31 @@
+import * as React from "react";
+const InterfaceIcon = (props: React.JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>) => (
+  <svg
+    width={48}
+    height={48}
+    viewBox="0 0 48 48"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlnsXlink="http://www.w3.org/1999/xlink"
+    {...props}
+  >
+    <rect width={48} height={48} fill="url(#pattern0_18_2188)" />
+    <defs>
+      <pattern
+        id="pattern0_18_2188"
+        patternContentUnits="objectBoundingBox"
+        width={1}
+        height={1}
+      >
+        <use xlinkHref="#image0_18_2188" transform="scale(0.0111111)" />
+      </pattern>
+      <image
+        id="image0_18_2188"
+        width={90}
+        height={90}
+        xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEwklEQVR4nO2bTYgcRRTHnx9RL37gB2623kxXtYPiKl4WEUFcxJN606zZzHuza0JYD+4GJXgSNIjgKigelehFUQQ9qAfxW9C4iafNwYMheggkEQWDbhL8yJpIzazGmK6ej52ZftW8H9Rtuvv//3d11avqaQBFURRFURRFURRFURRFURRFEmNjkxc4Q884w4cd8qmumuFDDmnBn6NoH+JxSAtdB3xWo4WifYjH9dKTz+rZ9ANIpVabv9Aa3uaQ9jikY87wEYe0aA09OMxH0a25N7fasPT6bHxGPqvVzI75DC3SvM/0jB8jThuHtDck2hr+ulKZGh2GcBdR0D4Tn02OjiWfbfPHPvW8kP8z7u0ZRs92kQTdnLSRd3egZanZs1vDRX/MDbLBgG/MgNsctOn6YhrEHfRusMhH4wh68rxYg7ZIyxEF/cS5cQetQ8epIQ0dNB9Hj86maF0dtrnV8o6X2v+YFsfHZ9dBl1SrNGYN/9KBmCVnaEffzLXO1daX15aMNK7vrbzzi7v2vv4ti1sLljxRtJgkMyPdiqmNbL7KGf4+1yjyLov12/85pt9PgMXGhEX6Kj9s+u7a9Zuu7GXB0ibs0wuWM+8Qz/nxpDlBGv7ZGvrSIW3tpSf7ycshf54T8Aln+JH/T3L9Dvq0lvp2h7ySo+eT0ITbfgnOs82bafhIq7igRZ/lULYucsd+Q78lpn5X1nGtrc61Dht8KOvcqWnc7a+dc+xDEBPVKrvW5kqmmRVn+L5BbpNa5KeD5ze0wSH9FTjuqNcOsWCR3g4HUd/ewSSz0FPP7nDj3yI9mnOT3oIYcEg3O+ST2SboUwA4p2iNq/PHZ4GwT1rDt4B0rKGPQo9lur5RBSHYkXoSHN4MfQCSSZFvzJkAd4AwrOGnwnqnbwKpWMM7A0PGT7UaXQLCuO6KLRdbpB+zw6aXQCJpOnmpQzqeKbpCj4FQLNLjgaCPe08gDYe0JbM3G/rduamrQSit1Wt2bZ1U+AGQhkX6ONAzXgXhWOTXAuXihyAJv08QWt6mhu4B4XiNgUrpBOLk5SAFZ4gDk+ByksxcBMJZ/avFr5nDB/IUSMEafj17fOY3IBKc4TfFD33O0MFA7bwBIsFW6hsDT+UBkEDNEAaK/hWJtXOIJJm5LLTZNKw/D+ViR+n+wCO3FyLDGvome0Jv3CthfH4u0KNfhMiwhl4OlHnPSqifM18TpcibITIc0tbApP6FhKCXs8T5l7IQGWlgU8y/wC1UmH9hGxD2xwRMnA+RMT4+u84a+jPLk1+qFyYsrTRuC4zP30KkWEP7Mxcuo41bCxPlx+FA7fkeRIpDfj/wlE6L2zi3SM9DpDjkFwKVx5OFibKGXwnc/W0QKYmhhwOedhYmyhl+N1NUpb4RIiVF2hTYTnhHXA2dmPodECnpKN2ZPRzyrsJEWaR9WaKuqUzfAJGShmpppH0Dv3hZv2Ydk+arrF+zOmm+yvo1q5Pma+13nZsNhCHOlzhBZfUlTlBZfXV7gdiDhj79Pn5BZfUlTlBZfYkTVFZf4gSV1Zc4QWX1FbpAtw2EIc6XOEFl9SVOUFl99edrVjoIwhDna9BfsxaFOF/D+Jq1CMrqS1EURVEURVEURVEURVEUBeTxN8pQQiT2EMbYAAAAAElFTkSuQmCC"
+      />
+    </defs>
+  </svg>
+);
+export default InterfaceIcon;
