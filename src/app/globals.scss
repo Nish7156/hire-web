@@ -15,7 +15,7 @@
 }
 
 .container {
-  @apply w-full max-w-[1284px] mx-auto px-4 md:px-6;
+  @apply w-full max-w-[1120px] mx-auto px-4 md:px-6;
 }
 
 .custom-buttom {
@@ -62,4 +62,12 @@
   background: linear-gradient(135deg, #1ad9df, #a824fe);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.heading-text {
+  @apply text-[30px] md:text-[60px] leading-[50px] md:leading-[80px] font-bold;
+}
+
+.normal-text{
+  @apply text-lg
 }
