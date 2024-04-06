@@ -13,7 +13,7 @@ const Header = () => {
 
   return (
     <div className="container">
-      <nav className="relative  py-4 flex justify-between items-center bg-white">
+      <nav className="relative  py-4 flex  gap-4 justify-between items-center bg-white">
         {/* Logo component */}
         <Logo />
 
@@ -133,7 +133,7 @@ const Logo = () => (
 const MenuItem = ({ title, link }: any) => (
   <li>
     <Link
-      className="mx-6 text-lg font-normal text-black hover:text-gray-500"
+      className="mx-4 text-lg font-normal text-black hover:text-gray-500"
       href={`${link}`}
     >
       {title}

@@ -13,21 +13,25 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-      colors:{
-        pink:{
-          DEFAULT:'#FDF7FF'
+      colors: {
+        pink: {
+          DEFAULT: "#FDF7FF",
         },
-       border:{
-        DEFAULT:'#D9D9D9'
-       },
-       light:{
-        DEFAULT:'#37393F',
-        100:'#87888B'
-       },
-       lightGreen:{
-        DEFAULT:'#F3F9FC'
-       }
-      }
+        border: {
+          DEFAULT: "#D9D9D9",
+        },
+        light: {
+          DEFAULT: "#37393F",
+          100: "#87888B",
+        },
+        lightGreen: {
+          DEFAULT: "#F3F9FC",
+        },
+        textLight: {
+          DEFAULT: "#475569",
+          100:'#717171'
+        },
+      },
     },
   },
   plugins: [],

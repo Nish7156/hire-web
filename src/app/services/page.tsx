@@ -12,7 +12,7 @@ function page() {
     <div>
       <MyComponent />
       <FeactursSection />
-      <AgileTeam/>
+      <AgileTeam/ >
       <HowItWorks />
 
       <div className="container py-10 md:py-[99px]">

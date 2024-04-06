@@ -72,7 +72,10 @@
 }
 
 .normal-text {
-  @apply text-lg;
+  @apply text-lg font-normal text-textLight-100;
+}
+.md-text{
+  @apply md:text-[48px]  font-semibold md:leading-[65px] text-3xl
 }
 
 .gradient-text {
@@ -86,4 +89,8 @@
   z-index: 1;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.leader-card-gradiant{
+  background: linear-gradient(135deg, #c0ebf3, #e4cff3);
 }
