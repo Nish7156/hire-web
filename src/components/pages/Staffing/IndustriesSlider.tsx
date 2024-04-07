@@ -52,9 +52,9 @@ function IndustriesSlider() {
         </div>
         <div className=" pt-10 md:pt-[88px]">
           <Slider {...settings}>
-            {SliderData.map((data: any) => {
+            {SliderData.map((data: any,index:number) => {
               return (
-                <div className="">
+                <div className="" key={index}>
                   <div className=" relative md:mr-4 md:h-[257px]">
                     <img src="/slider/slide-1.svg" alt="" className="w-full md:w-auto" />
                     <div className=" bg-border-100 absolute right-0 left-0 bottom-0 rounded-br-xl rounded-bl-xl  py-[18px] px-6">
