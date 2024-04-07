@@ -2,6 +2,7 @@
 import CustomButton from "@/components/elements/CustomButton";
 import { Menus } from "@/components/lib/constant";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 const Header = () => {
@@ -40,9 +41,19 @@ const Header = () => {
           }`}
         >
           {Menus.map((data: any, index: number) => {
+            const pathname = usePathname();
+            const isActive = pathname === data.link;
             return (
               <div key={index} className="">
                 <MenuItem title={data.title} link={data.link} />
+
+                <div className=" flex justify-center">
+                  <div
+                    className={`w-1 rounded-full h-1 ${
+                      isActive ? "gradiant-dot" : "bg-white"
+                    } `}
+                  ></div>
+                </div>
               </div>
             );
           })}
@@ -53,7 +64,7 @@ const Header = () => {
         </div>
 
         <div
-          className={`navbar-menu fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto ${
+          className={`navbar-menu fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm  py-6 px-4 md:px-6 bg-white border-r overflow-y-auto ${
             isMenuOpen ? "block" : "hidden"
           }`}
         >
@@ -81,7 +92,7 @@ const Header = () => {
           <ul>
             {Menus.map((data: any, index: number) => {
               return (
-                <div key={index} className="">
+                <div key={index} className="mb-4">
                   <MenuItem title={data.title} link={data.link} />
                 </div>
               );
@@ -90,7 +101,7 @@ const Header = () => {
 
           {/* Sign in and Sign up buttons */}
           <div className="mt-auto">
-            <CustomButton />
+            <CustomButton>Contact Us</CustomButton>
           </div>
         </div>
       </nav>
@@ -130,15 +141,24 @@ const Logo = () => (
   </Link>
 );
 
-const MenuItem = ({ title, link }: any) => (
-  <li>
-    <Link
-      className="mx-4 text-lg font-normal text-black hover:text-gray-500"
-      href={`${link}`}
-    >
-      {title}
-    </Link>
-  </li>
-);
+const MenuItem = ({ title, link }: any) => {
+  const pathname = usePathname();
+  const isActive = pathname === link;
+
+  return (
+    <>
+      <li>
+        <Link
+          className={`md:mx-4 mx-0 text-lg font-normal text-black hover:text-gray-500 ${
+            isActive ? "leverage-expertise" : ""
+          }`}
+          href={`${link}`}
+        >
+          {title}
+        </Link>
+      </li>
+    </>
+  );
+};
 
 export default Header;

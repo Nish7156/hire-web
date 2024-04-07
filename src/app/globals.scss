@@ -58,6 +58,10 @@
   -webkit-text-fill-color: transparent;
 }
 
+.gradiant-dot {
+  background: linear-gradient(135deg, #1ad9df, #a824fe);
+}
+
 .heading-text {
   @apply text-[40px] md:text-[60px] leading-[50px] md:leading-[80px] font-bold;
 }
@@ -174,4 +178,25 @@
 
 .hero-banner-text {
   font-weight: 600 !important;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.text-animation {
+  animation: slideIn 0.5s ease forwards;
+}
+
+
+#toggle-btn{
+    width: 2rem !important;
+    height: 2rem !important;
 }

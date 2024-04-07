@@ -8,7 +8,7 @@ function page() {
     <div>
       <AboutHero />
       <WhyChooseUs/>
-      <div className="container py-10 md:py-[121px]">
+      <div className="container py-10 md:pb-[100px]">
         <QuestionsSection
           title={
             <>
