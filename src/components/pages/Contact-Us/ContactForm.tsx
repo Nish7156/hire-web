@@ -79,7 +79,7 @@ function ContactForm() {
             <div className="flex gap-6 flex-wrap">
               {BuildingTypes.map((data: any, index: number) => {
                 return (
-                  <div className="py-3 px-[27px] border-[1px] cursor-pointer border-black dark-btn">
+                  <div key={index} className="py-3 px-[27px] border-[1px] cursor-pointer border-black dark-btn">
                     <div className="flex items-center gap-[19px]">
                       <input type="checkbox" className="w-6 h-6 rounded-lg" />
                       <p className=" text-2xl font-normal">{data.title}</p>
@@ -162,7 +162,7 @@ function ContactForm() {
             <div className="flex gap-6 flex-wrap">
               {BudgetList.map((data: any, index: number) => {
                 return (
-                  <div className="py-3 px-[27px] border-[1px] cursor-pointer border-black dark-btn">
+                  <div key={index} className="py-3 px-[27px] border-[1px] cursor-pointer border-black dark-btn">
                     <div className="flex items-center gap-[19px]">
                       <input type="checkbox" className="w-6 h-6 rounded-lg" />
                       <p className=" text-2xl font-normal">{data.title}</p>

@@ -65,7 +65,7 @@
 }
 
 .heading-text {
-  @apply text-[30px] md:text-[60px] leading-[50px] md:leading-[80px] font-bold;
+  @apply text-[40px] md:text-[60px] leading-[50px] md:leading-[80px] font-bold;
 }
 .heading2-text {
   @apply text-[30px] md:text-[40px] leading-[50px] md:leading-[60px] font-medium;
@@ -158,4 +158,23 @@
       outline: none;
     }
   }
+}
+
+.gradiant-text-2 {
+  background: linear-gradient(135deg, #1ad9df, #a824fe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.choose-us {
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  font-weight: 500;
+  text-align: left;
+  white-space: nowrap;
+  background: linear-gradient(135deg, #1ad9df, #a824fe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
