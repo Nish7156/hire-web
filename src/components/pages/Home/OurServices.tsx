@@ -66,14 +66,8 @@ function OurServices() {
           Our Services
         </h2>
         <div className="">
-          <img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/fd4b77e0ce161b5928cc8eba15a95040601255b4f285d840bb3fa61a329f30c3?apiKey=8bb55e60ed164c3885dc3e2ec7400011&"
-            alt="Background"
-            className="object-cover absolute inset-0 size-full"
-          />
           <div className="flex relative flex-col w-full max-w-[1119px] max-md:max-w-full">
-            <div className="shrink-0 h-1 rounded-sm bg-zinc-300 max-md:max-w-full" />
+            <div className="shrink-0 h-1 mt-8 rounded-sm bg-zinc-300 max-md:max-w-full" />
             <div className="px-px mt-14 max-md:mt-10 max-md:max-w-full">
               <div className="flex gap-5 max-md:flex-col max-md:gap-0">
                 {services.slice(0, 3).map((service, index) => (

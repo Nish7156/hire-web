@@ -3,13 +3,13 @@ import * as React from "react";
 
 const HeroSection: React.FC = () => {
   return (
-    <div className="container">
-      <div className="flex gap-5 justify-between  bg-white max-md:flex-wrap ">
-        <div className="">
-          <div className=" text-6xl font-semibold text-black bg-clip-text bg-[linear-gradient(127deg,#1AD9DF_0%,#A824FE_100%)] leading-[80px]  max-md:text-4xl max-md:leading-[59px] ">
+    <div className="">
+      <div className="flex gap-5 justify-between  bg-white max-lg:flex-wrap ">
+        <div className=" pl-6 pr-6 md:pr-0 lg:pl-[184px] ml-auto pt-[73px]">
+          <div className="text-[40px] md:text-[60px] leading-[50px] md:leading-[80px] font-semibold ">
             Unlock Growth
             <br />
-            <p className="leverage-expertise  leading-[80px]  max-md:text-4xl max-md:leading-[59px]">
+            <p className="leverage-expertise  text-[40px] md:text-[60px] leading-[50px] md:leading-[80px] font-semibold">
               Leverage Expertise
             </p>
           </div>
@@ -27,7 +27,7 @@ const HeroSection: React.FC = () => {
           loading="lazy"
           src="/images/home-hero-img.svg"
           alt="Decorative image"
-          className="w-full aspect-[1.05] "
+          className="w-full aspect-[1.05]  "
         />
       </div>
     </div>

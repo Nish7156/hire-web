@@ -61,15 +61,16 @@ const ValuesSection: React.FC = () => {
   return (
     <>
       <div className="flex flex-col">
-        <header className="flex flex-col justify-center items-start  w-full text-5xl font-semibold backdrop-blur-[25px] bg-[linear-gradient(126deg,#C1EBF3_0%,#E4D0F4_100%)] text-neutral-700  max-md:max-w-full max-md:text-4xl">
+        <div className="flex py-[74px] flex-col justify-center items-start  w-full text-5xl font-semibold backdrop-blur-[25px] bg-[linear-gradient(126deg,#C1EBF3_0%,#E4D0F4_100%)] text-neutral-700  max-md:max-w-full max-md:text-4xl">
           <div className="container relative">
-            <div className="mt-3 mb-[100px] bg-clip-text bg-[linear-gradient(127deg,#1AD9DF_0%,#A824FE_100%)] max-md:mb-10 max-md:max-w-full max-md:text-4xl">
-              Values Incorporated <br />
-              <span className="font-medium text-neutral-700">
-                Shaping Our Every Step
-              </span>
+            <div className=" text-black mb-24 font-semibold hero-banner-text">
+              <span className="leverage-expertise leading-[72px] ">
+                Values Incorporated
+              </span>{" "}
+              <br />
+              Shaping Our Every Step
             </div>
-            <main className="z-10  absolute self-center ">
+            <main className="z-10 top-[90%]  absolute self-center ">
               <div className="flex gap-5 max-md:flex-col max-md:gap-0">
                 {valueCardsData.map((card, index) => (
                   <ValueCard
@@ -83,7 +84,7 @@ const ValuesSection: React.FC = () => {
               </div>
             </main>
           </div>
-        </header>
+        </div>
       </div>
       <div className="mt-[300px]"></div>
     </>

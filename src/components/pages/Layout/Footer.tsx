@@ -6,7 +6,7 @@ function Footer() {
   return (
     <>
       <div className=" border-0 md:border-t-[1px] ">
-        <div className="container py-[62px] border-b-[1px]">
+        <div className="container py-6 md:py-[62px] border-b-[1px]">
           <div className=" flex justify-between flex-col md:flex-row">
             <div className=" max-w-[520px] border-0 md:border-r-[1px]">
               <div className="">
@@ -14,14 +14,14 @@ function Footer() {
                   Ready to work with us ?
                 </h3>
               </div>
-              <div className=" mt-6 grid grid-cols-2">
+              <div className=" mt-6 grid grid-cols-1 md:grid-cols-2">
                 <CustomButton>sales@hirree.com</CustomButton>
               </div>
-              <div className="grid grid-cols-2 mt-3">
+              <div className="grid grid-cols-1 md:grid-cols-2 mt-3">
                 <CustomButton>hr@hirree.com</CustomButton>
               </div>
             </div>
-            <div className="border-0 md:border-r-[1px] flex-1 ">
+            <div className="hidden md:block border-0 md:border-r-[1px] flex-1 ">
               <div className=" flex py-4 justify-center items-center content-center">
                 <ul>
                   {Menus.map((data: any, index: number) => {
@@ -35,7 +35,7 @@ function Footer() {
               </div>
             </div>
             <div className="flex-1">
-              <div className=" ml-4 md:ml-[62px] flex py-4 justify-center items-center content-center">
+              <div className=" ml-0 mt-4 md:mt-0 md:ml-[62px] flex py-4 justify-center items-center content-center">
                 <div className="">
                   <p>
                     Address : Lorem ipsum dolor sit amet consectetur. Ultricies
@@ -43,6 +43,19 @@ function Footer() {
                   </p>
                   <p className="mt-2">Phone : 3463536572xxx</p>
                 </div>
+              </div>
+            </div>
+            <div className=" md:hidden border-0 md:border-r-[1px] flex-1 ">
+              <div className=" flex py-4 md:justify-center items-center content-center">
+                <ul>
+                  {Menus.map((data: any, index: number) => {
+                    return (
+                      <li className="mb-4" key={index}>
+                        <a href="">{data.title}</a>
+                      </li>
+                    );
+                  })}
+                </ul>
               </div>
             </div>
           </div>

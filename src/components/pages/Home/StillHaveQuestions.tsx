@@ -5,7 +5,7 @@ import * as React from "react";
 
 const StillHaveQuestions: React.FC = () => {
   return (
-    <div className="container">
+    <div className="container py-10 md:py-[124px]">
       <QuestionsSection
         title="Still have questions?"
         description="Can't find the answer you're looking for? Please talk to our friendly team."

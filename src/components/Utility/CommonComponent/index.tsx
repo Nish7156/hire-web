@@ -14,7 +14,7 @@ export const QuestionsSection: React.FC<QuestionsSectionProps> = ({
   buttonText,
 }) => {
   return (
-    <section className="flex justify-center items-center px-16 py-14 text-center text-black bg-[linear-gradient(126deg,#C1EBF3_0%,#E4D0F4_100%)] rounded-[32px] max-md:px-5">
+    <section className="flex justify-center items-center px-8 md:px-16 py-8 md:py-14 text-center text-black bg-[linear-gradient(126deg,#C1EBF3_0%,#E4D0F4_100%)] rounded-[32px] max-md:px-5">
       <div className="flex flex-col items-center max-w-full w-[716px]">
         <h2 className="text-4xl font-semibold max-md:max-w-full">{title}</h2>
         {description && (
@@ -30,7 +30,7 @@ export const QuestionsSection: React.FC<QuestionsSectionProps> = ({
             className="mt-8 max-w-full rounded-full aspect-[2.44] w-[118px]"
           />
         )}
-        <div className=" grid grid-cols-1 md:grid-cols-3">
+        <div className=" mt-4 grid grid-cols-1 md:grid-cols-3">
           <div className=""></div>
           <CustomButton>{buttonText}</CustomButton>
           <div className=""></div>

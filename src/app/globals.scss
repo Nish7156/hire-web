@@ -53,12 +53,6 @@
 }
 
 .leverage-expertise {
-  position: relative;
-  font-family: Poppins, var(--default-font-family);
-  font-size: 60px;
-  font-weight: 600;
-  line-height: 80px;
-  text-align: left;
   background: linear-gradient(135deg, #1ad9df, #a824fe);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -166,7 +160,6 @@
   -webkit-text-fill-color: transparent;
 }
 
-
 .choose-us {
   flex-shrink: 0;
   flex-basis: auto;
@@ -177,4 +170,8 @@
   background: linear-gradient(135deg, #1ad9df, #a824fe);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.hero-banner-text {
+  font-weight: 600 !important;
 }
