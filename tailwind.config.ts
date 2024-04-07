@@ -19,6 +19,7 @@ const config: Config = {
         },
         border: {
           DEFAULT: "#D9D9D9",
+          100:'#F4F4F4'
         },
         light: {
           DEFAULT: "#37393F",
