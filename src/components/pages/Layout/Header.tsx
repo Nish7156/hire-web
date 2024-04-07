@@ -6,6 +6,8 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 const Header = () => {
+  const pathname = usePathname();
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -41,7 +43,6 @@ const Header = () => {
           }`}
         >
           {Menus.map((data: any, index: number) => {
-            const pathname = usePathname();
             const isActive = pathname === data.link;
             return (
               <div key={index} className="">

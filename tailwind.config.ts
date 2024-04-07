@@ -23,14 +23,16 @@ const config: Config = {
         },
         light: {
           DEFAULT: "#37393F",
-          100: "#87888B",
+          100: "#87888B"
         },
         lightGreen: {
           DEFAULT: "#F3F9FC",
         },
         textLight: {
           DEFAULT: "#475569",
-          100:'#717171'
+          100:'#717171',
+          200:'#555555'
+
         },
       },
     },

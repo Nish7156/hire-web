@@ -42,6 +42,17 @@
   background-clip: padding-box, border-box;
 }
 
+.outline-btn{
+  border-width: 2px;
+  color: black;
+  border: 2px double transparent;
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)),
+    radial-gradient(circle at left top, rgb(1, 110, 218), rgb(217, 0, 192));
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  border-radius: 30px;
+}
+
 .about-cover-banner {
   position: relative;
   width: 1440px;
