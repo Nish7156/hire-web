@@ -101,7 +101,7 @@ const Header = () => {
 // Subcomponents
 
 const Logo = () => (
-  <a className="text-3xl font-bold leading-none" href="#">
+  <Link className="text-3xl font-bold leading-none" href="/">
     <svg
       width="197"
       height="30"
@@ -127,7 +127,7 @@ const Logo = () => (
         </linearGradient>
       </defs>
     </svg>
-  </a>
+  </Link>
 );
 
 const MenuItem = ({ title, link }: any) => (

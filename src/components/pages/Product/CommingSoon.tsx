@@ -23,8 +23,15 @@ function CommingSoon() {
               id=""
             />
             <div className=" absolute right-[210px] top-[9px]">
-              <button className="py-2 px-4 bg-black text-white dark-btn">
-              Notify Me
+              <button
+                disabled={true}
+                className={`py-2 px-4 ${
+                  true ? "bg-light" : "bg-black"
+                } hover:bg-light text-white dark-btn ${
+                  true ? " cursor-not-allowed" : "cursor-pointer"
+                }`}
+              >
+                Notify Me
               </button>
             </div>
           </div>
