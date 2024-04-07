@@ -15,10 +15,10 @@ function Footer() {
                 </h3>
               </div>
               <div className=" mt-6 grid grid-cols-2">
-                <CustomButton />
+                <CustomButton>sales@hirree.com</CustomButton>
               </div>
-              <div className="grid grid-cols-2">
-                <CustomButton />
+              <div className="grid grid-cols-2 mt-3">
+                <CustomButton>hr@hirree.com</CustomButton>
               </div>
             </div>
             <div className="border-0 md:border-r-[1px] flex-1 ">

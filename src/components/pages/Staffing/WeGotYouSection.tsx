@@ -20,29 +20,31 @@ function WeGotYouSection() {
   ];
   return (
     <div>
-      <div className="container pt-10 pb-10 :pb-[102px]">
-        <div className="flex justify-center">
-          <h2 className="md-text">Whatever you need... We’ve got you</h2>
-        </div>
-        <div className="mt-10 md:mt-[103px]">
-          <div className="grid md:grid-cols-3 grid-cols-1 gap-24">
-            {WeGotYouData.map((data: any, index: number) => {
-              return (
-                <div className="" key={index}>
-                  <div className="">
-                    <div className=" flex justify-center">
-                      <img src={`${data.img}`} alt={data.title} />
-                    </div>
-                    <div className=" pt-5">
-                      <h3 className=" text-2xl font-medium text-center">
-                        {data.title}
-                      </h3>
-                      <p className=" pt-5 text-center">{data.desc}</p>
+      <div className="container ">
+        <div className="pt-10 pb-10 md:pb-[102px]">
+          <div className="flex justify-center">
+            <h2 className="md-text">Whatever you need... We’ve got you</h2>
+          </div>
+          <div className="mt-10 md:mt-[103px]">
+            <div className="grid md:grid-cols-3 grid-cols-1 gap-24">
+              {WeGotYouData.map((data: any, index: number) => {
+                return (
+                  <div className="" key={index}>
+                    <div className="">
+                      <div className=" flex justify-center">
+                        <img src={`${data.img}`} alt={data.title} />
+                      </div>
+                      <div className=" pt-5">
+                        <h3 className=" text-2xl font-medium text-center">
+                          {data.title}
+                        </h3>
+                        <p className=" pt-5 text-center">{data.desc}</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>
