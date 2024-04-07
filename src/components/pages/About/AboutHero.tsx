@@ -26,7 +26,7 @@ function AboutHero() {
     <>
       <div className="bg-pink">
         <div className="container">
-          <div className="py-[99px]">
+          <div className="py-12 md:py-[99px]">
             <div className=" flex justify-between md:flex-row flex-col">
               <div className=" md:max-w-[590px]">
                 <h1 className="heading-text font-semibold">

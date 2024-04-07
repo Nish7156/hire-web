@@ -3,109 +3,139 @@ import CustomButton from "@/components/elements/CustomButton";
 import { Menus } from "@/components/lib/constant";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Header = () => {
   const pathname = usePathname();
-
+  const [showBorderShadow, setShowBorderShadow] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [pathname]);
+
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isMenuOpen]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowBorderShadow(window.scrollY > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="container">
-      <nav className="relative  py-4 flex  gap-4 justify-between items-center bg-white">
-        {/* Logo component */}
-        <Logo />
+    <div className={`${showBorderShadow ? "shadow-md" : ""}`}>
+      <div className="container">
+        <nav className="relative  py-4 flex  gap-4 justify-between items-center bg-white">
+          {/* Logo component */}
+          <Logo />
 
-        {/* Mobile menu button */}
-        <div className="lg:hidden">
-          <button
-            className="navbar-burger flex items-center text-blue-600 p-3"
-            onClick={toggleMenu}
-          >
-            <svg
-              className="block h-4 w-4 fill-current"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
+          {/* Mobile menu button */}
+          <div className="lg:hidden">
+            <button
+              className="navbar-burger flex items-center text-blue-600 p-3"
+              onClick={toggleMenu}
             >
-              <title>Mobile menu</title>
-              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-            </svg>
-          </button>
-        </div>
-
-        <ul
-          className={`hidden lg:flex lg:mx-auto  lg:items-center lg:w-auto lg:space-x-6 ${
-            isMenuOpen ? "" : "hidden"
-          }`}
-        >
-          {Menus.map((data: any, index: number) => {
-            const isActive = pathname === data.link;
-            return (
-              <div key={index} className="">
-                <MenuItem title={data.title} link={data.link} />
-
-                <div className=" flex justify-center">
-                  <div
-                    className={`w-1 rounded-full h-1 ${
-                      isActive ? "gradiant-dot" : "bg-white"
-                    } `}
-                  ></div>
-                </div>
-              </div>
-            );
-          })}
-        </ul>
-
-        <div className="hidden xl:inline-block lg:ml-auto ">
-          <CustomButton>Contact Us</CustomButton>
-        </div>
-
-        <div
-          className={`navbar-menu fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm  py-6 px-4 md:px-6 bg-white border-r overflow-y-auto ${
-            isMenuOpen ? "block" : "hidden"
-          }`}
-        >
-          {/* Close button */}
-          <div className="flex items-center mb-8">
-            <button className="navbar-close" onClick={toggleMenu}>
               <svg
-                className="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
+                className="block h-7 w-7 fill-current"
+                viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M6 18L18 6M6 6l12 12"
-                ></path>
+                <title>Mobile menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
               </svg>
             </button>
           </div>
 
-          {/* Mobile menu items */}
-          <ul>
+          <ul
+            className={`hidden lg:flex lg:mx-auto  lg:items-center lg:w-auto lg:space-x-6 ${
+              isMenuOpen ? "" : "hidden"
+            }`}
+          >
             {Menus.map((data: any, index: number) => {
+              const isActive = pathname === data.link;
               return (
-                <div key={index} className="mb-4">
+                <div key={index} className="">
                   <MenuItem title={data.title} link={data.link} />
+
+                  <div className=" flex justify-center">
+                    <div
+                      className={`w-1 rounded-full h-1 ${
+                        isActive ? "gradiant-dot" : "bg-white"
+                      } `}
+                    ></div>
+                  </div>
                 </div>
               );
             })}
           </ul>
 
-          {/* Sign in and Sign up buttons */}
-          <div className="mt-auto">
+          <div className="hidden xl:inline-block lg:ml-auto ">
             <CustomButton>Contact Us</CustomButton>
           </div>
-        </div>
-      </nav>
+
+          <div
+            className={`navbar-menu fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm  py-6 px-4 md:px-6 bg-white border-r overflow-y-auto ${
+              isMenuOpen ? "block" : "hidden"
+            }`}
+          >
+            {/* Close button */}
+            <div className="flex items-center mb-8">
+              <button className="navbar-close" onClick={toggleMenu}>
+                <svg
+                  className="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+
+            {/* Mobile menu items */}
+            <ul>
+              {Menus.map((data: any, index: number) => {
+                return (
+                  <div key={index} className="mb-4">
+                    <MenuItem title={data.title} link={data.link} />
+                  </div>
+                );
+              })}
+            </ul>
+
+            {/* Sign in and Sign up buttons */}
+            <div className="mt-auto">
+              <CustomButton>Contact Us</CustomButton>
+            </div>
+          </div>
+        </nav>
+      </div>
     </div>
   );
 };

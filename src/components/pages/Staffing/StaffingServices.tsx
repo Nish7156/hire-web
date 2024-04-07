@@ -51,7 +51,7 @@ function StaffingServices() {
           </div>
         </div>
         <div className="mt-12 md:px-24">
-          <div className="grid md:grid-cols-2 grid-cols-1 md:gap-14">
+          <div className="grid md:grid-cols-2 grid-cols-1 gap-6 md:gap-14">
             {StaffingServicesData.map((data: any, index: number) => {
               return (
                 <div className="" key={index}>
@@ -77,7 +77,7 @@ function StaffingServices() {
           </div>
         </div>
         <div className=" my-10 md:my-24">
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 md:gap-6 gap-4">
             {QuestionCardData.map((data: any, index: number) => {
               return (
                 <div
