@@ -1,12 +1,14 @@
 import { QuestionsSection } from "@/components/Utility/CommonComponent";
 import AboutHero from "@/components/pages/About/AboutHero";
 import WhyChooseUs from "@/components/pages/About/WhyChooseUs";
+import ValuesSection from "@/components/pages/Home/ValuesSection";
 import React from "react";
 
 function page() {
   return (
     <div>
       <AboutHero />
+      <ValuesSection/>
       <WhyChooseUs/>
       <div className="container py-10 md:pb-[100px]">
         <QuestionsSection

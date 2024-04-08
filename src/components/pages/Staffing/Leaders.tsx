@@ -13,6 +13,7 @@ function Leaders() {
               <div className="flex justify-center items-center pt-40">
                 <h2 className="md-text">Why we’re leaders in recruitment?</h2>
               </div>
+              <div className="gradiant-bg mt-5 md:mt-10 w-[100px] h-2 rounded-3xl"></div>
             </div>
             <div className=" col-span-2">
               <div className="flex gap-6 flex-wrap md:flex-nowrap">

@@ -30,7 +30,7 @@ export const QuestionsSection: React.FC<QuestionsSectionProps> = ({
             className="mt-8 max-w-full rounded-full aspect-[2.44] w-[118px]"
           />
         )}
-        <div className=" mt-2 grid grid-cols-1 md:grid-cols-3">
+        <div className=" mt-4 md:mt-8 grid grid-cols-1 md:grid-cols-3">
           <div className=""></div>
           <CustomButton>{buttonText}</CustomButton>
           <div className=""></div>

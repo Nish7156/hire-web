@@ -102,8 +102,12 @@
 
 .leader-card-gradiant {
   background: linear-gradient(135deg, #c0ebf3, #e4cff3);
+  // border: 10px solid;
+  // border-image: linear-gradient(45deg, #1ad9df, #a824fe) 1;
 }
-
+.gradiant-bg{
+  background: linear-gradient(135deg, #1ad9df, #a824fe);
+}
 .card-shadow {
   background: #ffffff;
   border: 1px solid #0f172a;
