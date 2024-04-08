@@ -10,7 +10,7 @@ function Leaders() {
         <div className="md:pt-[104px] md:pb-[90px] pt-10 pb-10">
           <div className="grid grid-cols-1 md:grid-cols-3">
             <div className=" col-span-1 mb-6 md:mb-0">
-              <div className="flex justify-center items-center pt-40">
+              <div className="flex justify-center items-center md:pt-40">
                 <h2 className="md-text">Why we’re leaders in recruitment?</h2>
               </div>
               <div className="gradiant-bg mt-5 md:mt-10 w-[100px] h-2 rounded-3xl"></div>
