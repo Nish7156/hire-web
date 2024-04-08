@@ -1,5 +1,6 @@
-const serviceData = [
+export const ServiceDataList = [
   {
+    bg:'bg-pink',
     serviceTitle: "Product Design",
     serviceDescription:
       "Successful product is the one that users turn to again and again. That’s why user-centered design is at the heart of every product we do. We deliver logical UX and beautiful UI for both mobile and web.",
@@ -49,6 +50,7 @@ const serviceData = [
     ]
   },
   {
+    bg:'bg-white',
     serviceTitle: "Web development",
     serviceDescription:
       "In a rapidly evolving digital landscape, you need a full stack engineering team you can rely on to make the right choices for your project. We use our experience to keep your product ahead of the curve.",
@@ -73,6 +75,7 @@ const serviceData = [
     ]
   },
   {
+    bg:'bg-lightGreen',
     serviceTitle: "Mobile development",
     serviceDescription:
       "The ever changing Mobile development environment is full of challenges. But we never met a challenge we couldn’t solve. Be it in Flutter, native Android or native, iOS, if it can be done, we will do it.",
@@ -105,6 +108,7 @@ const serviceData = [
     ]
   },
   {
+    bg:'bg-border',
     serviceTitle: "Quality Assurance",
     serviceDescription:
       "Quality can’t be added to finished products. That’s why our agile quality assurance methods include both manual and automated testing throughout the development process, ensuring a perfect final product.",
@@ -129,6 +133,7 @@ const serviceData = [
     ]
   },
   {
+    bg:'bg-pink',
     serviceTitle: "Digital Marketing",
     serviceDescription:
       "Having a great product isn’t enough; it’s got to get in front of your audience. Understanding the mechanics of digital marketing, we make sure to put your product, at the right time, in front of the right people.",

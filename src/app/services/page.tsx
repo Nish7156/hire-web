@@ -1,4 +1,5 @@
 import { QuestionsSection } from "@/components/Utility/CommonComponent";
+import { ServiceDataList } from "@/components/lib/data/ProductDesignService";
 import StillHaveQuestions from "@/components/pages/Home/StillHaveQuestions";
 import AgileTeam from "@/components/pages/Services/AgileTeam";
 import FeactursSection from "@/components/pages/Services/FeactursSection";
@@ -11,8 +12,15 @@ function page() {
   return (
     <div>
       <MyComponent />
-      <FeactursSection />
-      <AgileTeam/ >
+      {ServiceDataList.map((data: any, index: any) => {
+        return (
+          <div key={index} className="">
+            <FeactursSection  data={data}/>
+          </div>
+        );
+      })}
+
+      <AgileTeam />
       <HowItWorks />
 
       <div className="container py-10 md:py-[99px]">

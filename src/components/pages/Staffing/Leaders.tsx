@@ -1,4 +1,6 @@
 import QualityIcon from "@/components/Utility/icons/QualityIcon";
+import { Commitment } from "@/components/lib/data/Commitments";
+import Image from "next/image";
 import React from "react";
 
 function Leaders() {
@@ -15,70 +17,70 @@ function Leaders() {
             <div className=" col-span-2">
               <div className="flex gap-6 flex-wrap md:flex-nowrap">
                 <div className="flex justify-between flex-col gap-6 mt-0 md:mt-24">
-                  <div className=" rounded-xl leader-card-gradiant p-7">
-                    <div className="flex  items-center flex-col">
-                      <QualityIcon />
-                      <h1>Quality</h1>
-                      <p className="text-center">
-                        Strict quality benchmarks ensure we connect only the
-                        best talent.
-                      </p>
-                    </div>
-                  </div>
-                  <div className=" rounded-xl leader-card-gradiant p-7">
-                    <div className="flex  items-center flex-col">
-                      <QualityIcon />
-                      <h1>Quality</h1>
-                      <p className="text-center">
-                        Strict quality benchmarks ensure we connect only the
-                        best talent.
-                      </p>
-                    </div>
-                  </div>
+                  {Commitment.slice(0, 2).map((data: any, index: number) => {
+                    return (
+                      <div
+                        key={index}
+                        className=" rounded-3xl leader-card-gradiant p-7"
+                      >
+                        <div className="flex  items-center flex-col">
+                          <img
+                            src={`${data.image}`}
+                            alt={data.title}
+                            className=" w-[54px] h-[54px] md:w-[85px md:h-[85px]]"
+                          />
+                          <h1 className="text-[24px] font-semibold">
+                            {data.title}
+                          </h1>
+                          <p className="text-center">{data.description}</p>
+                        </div>
+                      </div>
+                    );
+                  })}
                 </div>
                 <div className="flex justify-between flex-col gap-6 mb-0 md:mb-24">
-                  <div className=" rounded-xl leader-card-gradiant p-7">
-                    <div className="flex  items-center flex-col">
-                      <QualityIcon />
-                      <h1>Quality</h1>
-                      <p className="text-center">
-                        Strict quality benchmarks ensure we connect only the
-                        best talent.
-                      </p>
-                    </div>
-                  </div>
-                  <div className=" rounded-xl leader-card-gradiant p-7">
-                    <div className="flex  items-center flex-col">
-                      <QualityIcon />
-                      <h1>Quality</h1>
-                      <p className="text-center">
-                        Strict quality benchmarks ensure we connect only the
-                        best talent.
-                      </p>
-                    </div>
-                  </div>
+                  {Commitment.slice(2, 4).map((data: any, index: number) => {
+                    return (
+                      <div
+                        key={index}
+                        className=" rounded-3xl leader-card-gradiant p-7"
+                      >
+                        <div className="flex  items-center flex-col">
+                          <img
+                            src={`${data.image}`}
+                            alt={data.title}
+                            className=" w-[54px] h-[54px] md:w-[85px md:h-[85px]]"
+                          />
+                          <h1 className="text-[24px] font-semibold">
+                            {data.title}
+                          </h1>
+                          <p className="text-center">{data.description}</p>
+                        </div>
+                      </div>
+                    );
+                  })}
                 </div>
                 <div className="flex justify-between flex-col gap-6 mt-0 md:mt-24">
-                  <div className=" rounded-xl leader-card-gradiant p-7">
-                    <div className="flex  items-center flex-col">
-                      <QualityIcon />
-                      <h1>Quality</h1>
-                      <p className="text-center">
-                        Strict quality benchmarks ensure we connect only the
-                        best talent.
-                      </p>
-                    </div>
-                  </div>
-                  <div className=" rounded-xl leader-card-gradiant p-7">
-                    <div className="flex  items-center flex-col">
-                      <QualityIcon />
-                      <h1>Quality</h1>
-                      <p className="text-center">
-                        Strict quality benchmarks ensure we connect only the
-                        best talent.
-                      </p>
-                    </div>
-                  </div>
+                  {Commitment.slice(4, 6).map((data: any, index: number) => {
+                    return (
+                      <div
+                        key={index}
+                        className=" rounded-3xl leader-card-gradiant p-7"
+                      >
+                        <div className="flex  items-center flex-col">
+                          <img
+                            src={`${data.image}`}
+                            alt={data.title}
+                            className=" w-[54px] h-[54px] md:w-[85px md:h-[85px]]"
+                          />
+                          <h1 className="text-[24px] font-semibold">
+                            {data.title}
+                          </h1>
+                          <p className="text-center">{data.description}</p>
+                        </div>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
             </div>

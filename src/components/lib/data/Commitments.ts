@@ -1,4 +1,4 @@
-const Commitment = [
+export const Commitment = [
   {
     title: "Quality",
     description:

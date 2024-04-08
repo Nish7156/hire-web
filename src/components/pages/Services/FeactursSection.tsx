@@ -3,7 +3,7 @@ import InterfaceIcon from "@/components/Utility/icons/InterfaceIcon";
 import PencileIcon from "@/components/Utility/icons/PencileIcon";
 import React from "react";
 
-function FeactursSection() {
+function FeactursSection({ data }: any) {
   const Feats = [
     {
       icon: <IdeaIcon />,
@@ -73,22 +73,17 @@ function FeactursSection() {
     },
   ];
   return (
-    <div className="bg-pink">
+    <div className={`${data.bg}`}>
       <div className="container">
         <div className="md:pt-[75px] md:pb-[81px] pt-10 pb-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className=" content-center max-w-[431px]">
-              <h2 className=" text-[40px]">Product Design</h2>
-              <p className="normal-text pt-[32px]">
-                Successful product is the one that users turn to again and
-                again. That’s why user-centered design is at the heart of every
-                product we do. We deliver logical UX and beautiful UI for both
-                mobile and web.
-              </p>
+              <h2 className=" text-[40px]">{data.serviceTitle}</h2>
+              <p className="normal-text pt-[32px]">{data.serviceDescription}</p>
             </div>
             <div className=" relative">
               <div className=" relative z-10">
-                <img src="/images/service-1.svg" alt="" />
+                <img src={`${data.serviceImage}`} alt="" />
               </div>
               <div className=" hidden xl:block absolute top-[-297px] right-[-150px]">
                 <img src="/bg/ringbg.svg" alt="" />
@@ -97,29 +92,31 @@ function FeactursSection() {
           </div>
           <div className="mt-6">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {Feats.map((data: any, index: number) => {
+              {data.Services.map((data: any, index: number) => {
                 return (
                   <div className="" key={index}>
                     {data.icon}
                     <h2 className="py-4 gradient-text font-bold text-2xl">
-                      {data.title}
+                      {data.serviceListTitle}
                     </h2>
                     <div className="h-1 w-full bg-border"></div>
                     <p className="py-5 text-sm  text-light-100 font-normal">
-                      {data.desc}
+                      {data.serviceListDescription}
                     </p>
                     <div className="">
                       <ul>
-                        {data.categories.map((item: any, index: number) => {
-                          return (
-                            <li
-                              key={index}
-                              className="text-sm font-normal text-light mb-3"
-                            >
-                              {item.category_name}
-                            </li>
-                          );
-                        })}
+                        {data.ServicesBullets.map(
+                          (item: any, index: number) => {
+                            return (
+                              <li
+                                key={index}
+                                className="text-sm font-normal text-light mb-3"
+                              >
+                                {item}
+                              </li>
+                            );
+                          }
+                        )}
                       </ul>
                     </div>
                   </div>

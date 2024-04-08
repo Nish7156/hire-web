@@ -3,7 +3,9 @@ import React from "react";
 function CommingSoon() {
   return (
     <div className=" relative">
-      <img src="/bg/comming-soon.svg" alt="" />
+      <div className=" flex justify-center items-center">
+        <img src="/bg/comming-soon.svg" alt="" className="w-full" />
+      </div>
       <div className="max-w-[944px] mx-auto w-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <div className=" flex justify-center">
           <h1 className=" text-[80px] leading-[120px] font-bold">

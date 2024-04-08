@@ -61,7 +61,7 @@ const services = [
 function OurServices() {
   return (
     <>
-      <div className="container pt-6 md:pt-0 ">
+      <div className="container pt-6 pb-4 md:pb-14 md:pt-0 ">
         <h2 className="self-start  text-5xl font-medium text-black capitalize max-md:ml-2.5 max-md:text-4xl">
           Our Services
         </h2>
