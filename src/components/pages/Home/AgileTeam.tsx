@@ -8,7 +8,7 @@ const AgileTeam: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2">
             <div className="">
               <div className=" md:max-w-[481px]">
-                <h2 className="heading2-text">Agile Team On Demand</h2>
+                <h2 className="heading2-text md:max-w-[368px] font-semibold">Agile Team On Demand</h2>
                 <div className=" pt-8">
                   <p>
                     We assemble the perfect team to create your product, saving
@@ -17,12 +17,12 @@ const AgileTeam: React.FC = () => {
                     project, we build you a team that’s accomplished, agile and
                     scalable in both directions
                   </p>
-                  <p className="pt-6">
+                  {/* <p className="pt-6">
                     Best of all, your product team will be working in a
                     productive, motivational environment for a company that has
                     a 95% employee retention rate and a top 5 employer in
                     Croatia award under its belt.
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>

@@ -3,32 +3,41 @@ import * as React from "react";
 
 const HeroSection: React.FC = () => {
   return (
-    <div className="">
-      <div className="flex gap-5 justify-between  bg-white max-lg:flex-wrap ">
-        <div className=" pl-6 pr-6 md:pr-0 lg:pl-[184px] ml-auto pt-[73px]">
-          <div className="text-[40px] md:text-[60px] leading-[50px] md:leading-[80px] font-semibold ">
-            Unlock Growth
-            <br />
-            <p className="leverage-expertise  text-[40px] md:text-[60px] leading-[50px] md:leading-[80px] font-semibold">
-              Leverage Expertise
-            </p>
+    <div className="max-w-[1440px] mx-auto w-full">
+      <div className="">
+        <div className="flex gap-5 justify-between  bg-white  lg:flex-row flex-col ">
+          <div className=" px-6 lg:mx-auto lg:mr-[36px] py-10 lg:py-[73px] ">
+            <div className="">
+              <div className="text-[32px] md:text-[60px] leading-[50px] md:leading-[80px] font-semibold ">
+                Unlock Growth
+                <br />
+                <p className="leverage-expertise  text-[32px] md:text-[60px] leading-[50px] md:leading-[80px] font-semibold">
+                  Leverage Expertise
+                </p>
+              </div>
+              <p className=" lg:max-w-[445px] mt-6">
+                Lorem ipsum dolor sit amet consectetur. Purus magna quam gravida
+                feugiat orci Lorem ipsum dolor sit amet consectetur. Purus magna
+                quam gravida feugiat orci{" "}
+              </p>
+              <div className=" mt-10 lg:mt-[38px]">
+                <div className=" grid grid-cols-1 lg:grid-cols-2">
+                  <CustomButton>Contact Us</CustomButton>
+                </div>
+              </div>
+            </div>
           </div>
-
-          <p className="mt-9 text-lg text-neutral-500  pr-0 lg:pr-[200px]">
-            Lorem ipsum dolor sit amet consectetur. Purus magna quam gravida
-            feugiat orci Lorem ipsum dolor sit amet consectetur. Purus magna
-            quam gravida feugiat orci{" "}
-          </p>
-          <div className=" mt-6 md:mt-[40px] grid grid-cols-1 md:grid-cols-2">
-            <CustomButton>Contact Us</CustomButton>
+          <div className=" ">
+            <div className="">
+              <img
+                loading="lazy"
+                src="/images/home-hero-img.svg"
+                alt="Decorative image"
+                className="w-full px-4 lg:px-0 lg:h-[587px] aspect-[1.05]  "
+              />
+            </div>
           </div>
         </div>
-        <img
-          loading="lazy"
-          src="/images/home-hero-img.svg"
-          alt="Decorative image"
-          className="w-full aspect-[1.05]  "
-        />
       </div>
     </div>
   );

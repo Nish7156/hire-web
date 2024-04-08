@@ -61,14 +61,14 @@ const services = [
 function OurServices() {
   return (
     <>
-      <div className="container ">
+      <div className="container pt-6 md:pt-0 ">
         <h2 className="self-start  text-5xl font-medium text-black capitalize max-md:ml-2.5 max-md:text-4xl">
           Our Services
         </h2>
         <div className="">
           <div className="flex relative flex-col w-full max-w-[1119px] max-md:max-w-full">
             <div className="shrink-0 h-1 mt-8 rounded-sm bg-zinc-300 max-md:max-w-full" />
-            <div className="px-px mt-14 max-md:mt-10 max-md:max-w-full">
+            <div className=" mt-2 md:mt-14 max-md:max-w-full">
               <div className="flex gap-5 max-md:flex-col max-md:gap-0">
                 {services.slice(0, 3).map((service, index) => (
                   <div
