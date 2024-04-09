@@ -93,8 +93,9 @@ const Header = () => {
             <CustomButton>Contact Us</CustomButton>
           </div>
 
+          {/* w-5/6 */}
           <div
-            className={`navbar-menu fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm  py-6 px-4 md:px-6 bg-white border-r overflow-y-auto ${
+            className={`navbar-menu fixed top-0 left-0 bottom-0 flex flex-col w-full max-w-sm  text-center py-6 px-4 md:px-6 bg-white border-r overflow-y-auto ${
               isMenuOpen ? "block" : "hidden"
             }`}
           >
@@ -180,7 +181,7 @@ const MenuItem = ({ title, link }: any) => {
     <>
       <li>
         <Link
-          className={`md:mx-4 mx-0 text-lg font-normal text-black hover:text-gray-500 ${
+          className={`md:mx-4 mx-0 text-xl md:text-lg font-normal text-black hover:text-gray-500 ${
             isActive ? "leverage-expertise" : ""
           }`}
           href={`${link}`}

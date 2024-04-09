@@ -31,7 +31,7 @@ function WhyChooseUs() {
   return (
     <div>
       <div className="container py-10 md:py-[63px] relative">
-        <div className=" hidden md:block absolute right-[-160px]">
+        <div className=" hidden md:block absolute right-[-150px]">
             <img src="/bg/circle-ring-2.svg" alt="" />
         </div>
         <div className=" md:max-w-[783px]">
