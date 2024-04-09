@@ -12,7 +12,7 @@ export default function CustomButton({ children, outline }: any) {
         outline ? "outline-btn" : "custom-buttom"
       } py-[13px] px-[47px] w-full font-medium text-lg`}
     >
-      {children}
+      <p className="btn-text"> {children}</p>
     </button>
   );
 }

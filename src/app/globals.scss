@@ -31,18 +31,33 @@
   border-radius: 30px;
   color: white;
   border: 2px solid white;
+  transition: all 0.9s ease;
 }
+
 .custom-buttom:hover {
+  // color: transparent;
   border-width: 2px;
-  color: black;
-  border: 2px double transparent;
+  border-style: double;
   background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)),
     radial-gradient(circle at left top, rgb(1, 110, 218), rgb(217, 0, 192));
   background-origin: border-box;
   background-clip: padding-box, border-box;
 }
+.custom-buttom .btn-text {
+  transition: color 0.9s ease; /* Smooth transition for color property over 0.9 seconds */
+}
 
-.outline-btn{
+.custom-buttom:hover .btn-text {
+  color: transparent; /* Hides the original text color */
+  background: linear-gradient(
+    135deg,
+    #1ad9df,
+    #a824fe
+  ); /* Gradient color for text */
+  -webkit-background-clip: text; /* Clip the background to the text */
+  -webkit-text-fill-color: transparent; /* Make text transparent */
+}
+.outline-btn {
   border-width: 2px;
   color: black;
   border: 2px double transparent;
@@ -105,7 +120,7 @@
   // border: 10px solid;
   // border-image: linear-gradient(45deg, #1ad9df, #a824fe) 1;
 }
-.gradiant-bg{
+.gradiant-bg {
   background: linear-gradient(135deg, #1ad9df, #a824fe);
 }
 .card-shadow {
@@ -210,10 +225,9 @@
   animation: slideIn 0.5s ease forwards;
 }
 
-
-#toggle-btn{
-    width: 2rem !important;
-    height: 2rem !important;
+#toggle-btn {
+  width: 2rem !important;
+  height: 2rem !important;
 }
 
 .image-container {

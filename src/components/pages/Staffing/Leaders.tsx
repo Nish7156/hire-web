@@ -22,7 +22,7 @@ function Leaders() {
                     return (
                       <div
                         key={index}
-                        className=" rounded-3xl leader-card-gradiant p-7"
+                        className=" rounded-3xl leader-card-gradiant p-7  border-cyan-400 border-solid shadow-xl border-[0.5px]"
                       >
                         <div className="flex  items-center flex-col">
                           <img
@@ -44,7 +44,7 @@ function Leaders() {
                     return (
                       <div
                         key={index}
-                        className=" rounded-3xl leader-card-gradiant p-7"
+                        className=" rounded-3xl leader-card-gradiant p-7  border-cyan-400 border-solid shadow-xl border-[0.5px]"
                       >
                         <div className="flex  items-center flex-col">
                           <img
@@ -66,7 +66,7 @@ function Leaders() {
                     return (
                       <div
                         key={index}
-                        className=" rounded-3xl leader-card-gradiant p-7"
+                        className=" rounded-3xl leader-card-gradiant p-7  border-cyan-400 border-solid shadow-xl border-[0.5px]"
                       >
                         <div className="flex  items-center flex-col">
                           <img
