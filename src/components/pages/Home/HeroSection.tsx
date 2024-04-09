@@ -3,9 +3,9 @@ import * as React from "react";
 
 const HeroSection: React.FC = () => {
   return (
-    <div className="max-w-[1440px] mx-auto w-full">
+    <div className="max-w-[1440px] mx-auto w-full blue-gradiant">
       <div className="">
-        <div className="flex gap-5 justify-between  bg-white  lg:flex-row flex-col ">
+        <div className="flex gap-5 justify-between lg:flex-row flex-col ">
           <div className=" px-6 lg:mx-auto lg:mr-[36px] py-10 lg:py-[73px] ">
             <div className="">
               <div className="text-[32px] md:text-[60px] leading-[50px] md:leading-[80px] font-semibold ">

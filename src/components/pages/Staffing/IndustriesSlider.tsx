@@ -6,7 +6,7 @@ function IndustriesSlider() {
   const SliderData = [1, 2, 3, 4, 5, 6, 6];
   var settings = {
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 300,
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -54,10 +54,10 @@ function IndustriesSlider() {
           <Slider {...settings}>
             {SliderData.map((data: any,index:number) => {
               return (
-                <div className="" key={index}>
+                <div className="slider-card" key={index}>
                   <div className=" relative md:mr-4 md:h-[257px]">
                     <img src="/slider/slide-1.svg" alt="" className="w-full md:w-auto" />
-                    <div className=" bg-border-100 absolute right-0 left-0 bottom-0 rounded-br-xl rounded-bl-xl  py-[18px] px-6">
+                    <div className=" bg-border-100 slider-bottom-card  absolute right-0 left-0 bottom-0 rounded-br-xl rounded-bl-xl  py-[18px] px-6">
                       <div className=" flex items-center">
                         <div className="w-[45px] h-[45px] bg-white rounded-full relative mr-6">
                           <Image
@@ -68,7 +68,7 @@ function IndustriesSlider() {
                             className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
                           />
                         </div>
-                        <p className="texxt-xl font-medium">B2B Commerce</p>
+                        <p className="text-lg font-medium">B2B Commerce</p>
                       </div>
                     </div>
                   </div>

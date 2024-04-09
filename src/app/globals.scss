@@ -31,7 +31,7 @@
   border-radius: 30px;
   color: white;
   border: 2px solid white;
-  transition: all 0.9s ease;
+  transition: all 0.2s ease;
 }
 
 .custom-buttom:hover {
@@ -243,4 +243,14 @@
     position: relative !important;
     height: unset !important;
   }
+}
+
+.blue-gradiant{
+  background: rgb(0,255,254);
+background: linear-gradient(90deg, rgba(0,255,254,0.11110381652661061) 29%, rgba(230,226,226,0) 100%);
+}
+
+.slider-card:hover .slider-bottom-card{
+  background: linear-gradient(135deg, #1ad9df, #a824fe);
+  color: white;
 }
