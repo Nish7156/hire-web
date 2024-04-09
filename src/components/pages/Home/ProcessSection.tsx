@@ -3,10 +3,10 @@ import React from "react";
 
 function ProcessSection() {
   const stepPositions = [
-    { left: 250, top: 25 },
-    { left: 520, top: -20 },
-    { left: 820, top: -8 },
-    { left: 1110, top: 20 }
+    { left: 'left-[250px]', top: 'top-[25px]' },
+    { left: 'left-[520px]', top: 'top-[-20px]' },
+    { left: 'left-[820px]', top: 'top-[-8px]' },
+    { left: 'left-[1110px]', top: 'top-[20px]' }
   ];
   return (
     <div className=" bg-lightGreen">
@@ -29,7 +29,7 @@ function ProcessSection() {
           {stepPositions.map((position, index) => (
             <div
               key={index}
-              className={`absolute left-[${position.left}px] top-[${position.top}px] `}
+              className={`absolute ${position.left} ${position.top} `}
             >
               <div className="w-[72px] h-[72px] rounded-full bg-border-100 relative">
                 <div className="w-[56px] h-[56px] rounded-full gradiant-bg absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
