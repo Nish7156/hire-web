@@ -51,11 +51,11 @@ function StaffingServices() {
           </div>
         </div>
         <div className="mt-12 md:px-24">
-          <div className="grid md:grid-cols-2 grid-cols-1 gap-6 md:gap-14">
+          <div className="grid lg:grid-cols-2 grid-cols-1 gap-6 md:gap-14">
             {StaffingServicesData.map((data: any, index: number) => {
               return (
                 <div className="" key={index}>
-                  <div className="card-shadow py-7 px-[43px]">
+                  <div className="card-shadow py-7 px-[43px] h-auto lg:h-[400px]">
                     <div className="flex justify-center">
                       <StaffingIcon1 />
                     </div>
@@ -65,7 +65,7 @@ function StaffingServices() {
                       </h2>
                     </div>
                     <div className="flex justify-center my-2.5">
-                      <div className="h-1 rounded-lg bg-red-900 w-[60px]"></div>
+                      <div className="h-1 rounded-lg gradiant-bg w-[60px]"></div>
                     </div>
                     <div className="flex justify-center">
                       <p className=" text-center">{data.desc}</p>
