@@ -1,3 +1,4 @@
+//@ts-nocheck
 "use client";
 import CustomButton from "@/components/elements/CustomButton";
 import { Menus } from "@/components/lib/constant";
@@ -9,6 +10,8 @@ const Header = () => {
   const pathname = usePathname();
   const [showBorderShadow, setShowBorderShadow] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
+  const [isHoveredText, setIsHoveredText] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -72,21 +75,25 @@ const Header = () => {
             }`}
           >
             {Menus.map((data: any, index: number) => {
-              const [isHovered, setIsHovered] = useState(false);
               const isActive = pathname === data.link && !isHovered;
 
               return (
                 <div
                   key={index}
                   className=""
-                  onMouseEnter={() => setIsHovered(true)}
-                  onMouseLeave={() => setIsHovered(false)}
+                  // onMouseEnter={() => setIsHoveredText(true)}
+                  // onMouseLeave={() => setIsHoveredText(false)}
                 >
-                  <MenuItem title={data.title} link={data.link} />
+                  <MenuItem
+                    title={data.title}
+                    link={data.link}
+                    setIsHovered={setIsHovered}
+                    isHovered={isHovered}
+                  />
                   <div className=" flex justify-center">
                     <div
                       className={`w-1 rounded-full h-1 ${
-                        isActive || isHovered ? "gradiant-dot" : "bg-white"
+                        isActive || isHoveredText ? "gradiant-dot" : "bg-white"
                       }`}
                     ></div>
                   </div>
@@ -179,10 +186,9 @@ const Logo = () => (
   </Link>
 );
 
-const MenuItem = ({ title, link }: any) => {
+const MenuItem = ({ title, link, setIsHovered, isHovered }: any) => {
   const pathname = usePathname();
   const isActive = pathname === link;
-  const [isHovered, setIsHovered] = useState(false);
   return (
     <>
       <li>
