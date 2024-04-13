@@ -16,7 +16,7 @@ const ValueCard: React.FC<ValueCardProps> = ({
   <div className="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
     <div className="flex flex-col grow px-6 py-7 mx-auto w-full font-medium bg-white rounded-3xl border-cyan-400 border-solid shadow-2xl border-[0.5px] max-md:px-5 max-md:mt-3.5">
       <div className="flex gap-5 justify-between pr-2.5 text-3xl text-black">
-        <div>{title}</div>
+        <div className="text-[28px]">{title}</div>
         <img
           loading="lazy"
           src={imageSrc}
@@ -24,7 +24,7 @@ const ValueCard: React.FC<ValueCardProps> = ({
           className="shrink-0 self-start w-12 aspect-square"
         />
       </div>
-      <div className="shrink-0 mt-4 h-0.5 blur-[0.5px]" />
+      <div className="shrink-0 gradiant-bg mt-4 h-[1px] blur-[0.5px]" />
       <div className="mt-4 text-base text-zinc-500">{description}</div>
     </div>
   </div>

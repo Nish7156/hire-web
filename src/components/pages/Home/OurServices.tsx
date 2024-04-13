@@ -13,13 +13,12 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
 }) => (
   <div className="flex flex-col grow capitalize max-md:mt-10">
     <div className=" flex justify-center md:justify-start">
-    <img src={imageSrc} alt={title} className="w-16 aspect-square" />
-
+      <img src={imageSrc} alt={title} className="w-16 aspect-square" />
     </div>
     <h3 className="mt-4 mr-5 text-3xl text-center md:text-left font-medium text-black max-md:mr-2.5">
       {title}
     </h3>
-    <p className="mt-4 text-sm text-neutral-700">{description}</p>
+    <p className="mt-4 text-sm text-neutral-700 text-center md:text-left">{description}</p>
   </div>
 );
 
@@ -70,30 +69,13 @@ function OurServices() {
         </h2>
         <div className="">
           <div className="flex relative flex-col w-full max-w-[1119px] max-md:max-w-full">
-            <div className="shrink-0 h-1 mt-8 rounded-sm bg-zinc-300 max-md:max-w-full" />
+            {/* <div className="shrink-0 h-1 mt-8 rounded-sm bg-zinc-300 max-md:max-w-full" /> */}
+            <div className="shrink-0 h-1 mt-8 rounded-sm max-md:max-w-full gradient-bg-line initial-gray" />
+
             <div className=" mt-2 md:mt-14 max-md:max-w-full">
-              <div className="flex gap-5 max-md:flex-col max-md:gap-0">
-                {services.slice(0, 3).map((service, index) => (
-                  <div
-                    key={index}
-                    className={`flex flex-col ${
-                      index === 0 ? "w-[33%] max-md:ml-0" : "lg:ml-5 w-[33%]"
-                    } max-md:w-full`}
-                  >
-                    <ServiceCard {...service} />
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className="mt-20 max-w-full w-[691px] max-md:mt-10">
-              <div className="flex gap-5 max-md:flex-col max-md:gap-0">
-                {services.slice(3).map((service, index) => (
-                  <div
-                    key={index}
-                    className={`flex flex-col ${
-                      index === 0 ? "w-[58%] max-md:ml-0" : "lg:ml-5 w-[42%]"
-                    } max-md:w-full`}
-                  >
+              <div className=" grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-12">
+                {services.map((service, index) => (
+                  <div key={index}>
                     <ServiceCard {...service} />
                   </div>
                 ))}

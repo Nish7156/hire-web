@@ -72,16 +72,22 @@ const Header = () => {
             }`}
           >
             {Menus.map((data: any, index: number) => {
-              const isActive = pathname === data.link;
-              return (
-                <div key={index} className="">
-                  <MenuItem title={data.title} link={data.link} />
+              const [isHovered, setIsHovered] = useState(false);
+              const isActive = pathname === data.link && !isHovered;
 
+              return (
+                <div
+                  key={index}
+                  className=""
+                  onMouseEnter={() => setIsHovered(true)}
+                  onMouseLeave={() => setIsHovered(false)}
+                >
+                  <MenuItem title={data.title} link={data.link} />
                   <div className=" flex justify-center">
                     <div
                       className={`w-1 rounded-full h-1 ${
-                        isActive ? "gradiant-dot" : "bg-white"
-                      } `}
+                        isActive || isHovered ? "gradiant-dot" : "bg-white"
+                      }`}
                     ></div>
                   </div>
                 </div>
@@ -176,15 +182,17 @@ const Logo = () => (
 const MenuItem = ({ title, link }: any) => {
   const pathname = usePathname();
   const isActive = pathname === link;
-
+  const [isHovered, setIsHovered] = useState(false);
   return (
     <>
       <li>
         <Link
           className={`md:mx-4 mx-0 text-xl md:text-lg font-normal text-black hover:text-gray-500 ${
             isActive ? "leverage-expertise" : ""
-          }`}
+          } ${isHovered ? "leverage-expertise" : ""}`}
           href={`${link}`}
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
         >
           {title}
         </Link>
