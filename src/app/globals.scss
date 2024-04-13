@@ -42,6 +42,7 @@
     radial-gradient(circle at left top, rgb(1, 110, 218), rgb(217, 0, 192));
   background-origin: border-box;
   background-clip: padding-box, border-box;
+  background-color: transparent;
 }
 .custom-buttom .btn-text {
   transition: color 0.9s ease; /* Smooth transition for color property over 0.9 seconds */
@@ -247,8 +248,11 @@
 }
 
 .blue-gradiant{
-  background: rgb(0,255,254);
-background: linear-gradient(90deg, rgba(0,255,254,0.11110381652661061) 29%, rgba(230,226,226,0) 100%);
+  background: rgb(0,212,255);
+  background: -moz-linear-gradient(39deg, rgba(0,212,255,0.3688068977591037) 0%, rgba(9,9,121,0) 32%);
+  background: -webkit-linear-gradient(39deg, rgba(0,212,255,0.3688068977591037) 0%, rgba(9,9,121,0) 32%);
+  background: linear-gradient(39deg, rgba(0,212,255,0.3688068977591037) 0%, rgba(9,9,121,0) 32%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00d4ff",endColorstr="#090979",GradientType=1);
 }
 
 .slider-card:hover .slider-bottom-card{

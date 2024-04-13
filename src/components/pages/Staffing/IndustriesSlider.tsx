@@ -39,7 +39,7 @@ function IndustriesSlider() {
     ],
   };
   return (
-    <div>
+    <div className="bg-pink">
       <div className="container py-[88px]">
         <div className="flex justify-center">
           <h2 className="md-text">Industries we serve</h2>

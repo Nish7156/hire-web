@@ -24,37 +24,7 @@ function Footer() {
                 <CustomButton outline>hr@hirree.com</CustomButton>
               </div>
             </div>
-            <div className="hidden md:block border-0 md:border-r-[1px] flex-1 ">
-              <div className=" flex py-4 justify-center items-center content-center">
-                <ul>
-                  {Menus.map((data: any, index: number) => {
-                    return (
-                      <Link href={`${data.link}`} key={index}>
-                        <li
-                          className={`mb-4 text-xl text-textLight-200 font-normal cursor-pointer  hover:text-black`}
-                        >
-                          <p>{data.title}</p>
-                        </li>
-                      </Link>
-                    );
-                  })}
-                </ul>
-              </div>
-            </div>
-            <div className="flex-1">
-              <div className=" ml-0 mt-4 md:mt-0 md:ml-[62px] flex py-4 justify-center items-center content-center">
-                <div className="">
-                  <p className=" text-textLight-200 text-lg">
-                    Address : Lorem ipsum dolor sit amet consectetur. Ultricies
-                    curabitur tempus turpis{" "}
-                  </p>
-                  <p className="mt-2 text-lg text-textLight-200">
-                    Phone : 3463536572xxx
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className=" md:hidden border-0 md:border-r-[1px] flex-1 ">
+            <div className="border-0 md:border-r-[1px] flex-1 mt-5 md:mt-0 ">
               <div className=" flex py-4 md:justify-center items-center content-center">
                 <ul>
                   {Menus.map((data: any, index: number) => {
@@ -71,6 +41,36 @@ function Footer() {
                 </ul>
               </div>
             </div>
+            <div className="flex-1">
+              <div className=" ml-0 md:ml-[62px] flex pb-4 justify-center items-center content-center">
+                <div className="">
+                  <p className=" text-textLight-200 text-lg">
+                    Address : Lorem ipsum dolor sit amet consectetur. Ultricies
+                    curabitur tempus turpis{" "}
+                  </p>
+                  <p className="mt-2 text-lg text-textLight-200">
+                    Phone : 3463536572xxx
+                  </p>
+                </div>
+              </div>
+            </div>
+            {/* <div className=" md:hidden border-0 md:border-r-[1px] flex-1 ">
+              <div className=" flex py-4 md:justify-center items-center content-center">
+                <ul>
+                  {Menus.map((data: any, index: number) => {
+                    return (
+                      <Link href={`${data.link}`} key={index}>
+                        <li
+                          className={`mb-4 text-xl text-textLight-200 font-normal cursor-pointer  hover:text-black`}
+                        >
+                          <p>{data.title}</p>
+                        </li>
+                      </Link>
+                    );
+                  })}
+                </ul>
+              </div>
+            </div> */}
           </div>
         </div>
         <div className="container">

@@ -12,8 +12,11 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   description,
 }) => (
   <div className="flex flex-col grow capitalize max-md:mt-10">
+    <div className=" flex justify-center md:justify-start">
     <img src={imageSrc} alt={title} className="w-16 aspect-square" />
-    <h3 className="mt-4 mr-5 text-3xl font-medium text-black max-md:mr-2.5">
+
+    </div>
+    <h3 className="mt-4 mr-5 text-3xl text-center md:text-left font-medium text-black max-md:mr-2.5">
       {title}
     </h3>
     <p className="mt-4 text-sm text-neutral-700">{description}</p>
@@ -62,7 +65,7 @@ function OurServices() {
   return (
     <>
       <div className="container pt-6 pb-4 md:pb-14 md:pt-0 ">
-        <h2 className="self-start  text-5xl font-medium text-black capitalize max-md:ml-2.5 max-md:text-4xl">
+        <h2 className="self-start md:mt-12  text-5xl font-medium text-black capitalize max-md:ml-2.5 max-md:text-4xl">
           Our Services
         </h2>
         <div className="">

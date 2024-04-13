@@ -32,7 +32,7 @@ const AgileTeam: React.FC = () => {
                 </div>
               </div>
             </div>
-            <div className="">
+            <div className=" hidden md:block">
               <div className=" flex justify-center gap-4 flex-col md:flex-row">
                 <div className=" mt-[92px]">
                   <img

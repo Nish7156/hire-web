@@ -8,7 +8,7 @@ const HeroSection: React.FC = () => {
         <div className="flex gap-5 justify-between lg:flex-row flex-col ">
           <div className=" px-6 lg:mx-auto lg:mr-[36px] py-10 lg:py-[73px] ">
             <div className="">
-              <div className="text-[32px] md:text-[60px] leading-[50px] md:leading-[80px] font-semibold ">
+              <div className="text-[32px] text-center md:text-left md:text-[60px] leading-[50px] md:leading-[80px] font-semibold ">
                 Unlock Growth
                 <br />
                 <p className="leverage-expertise  text-[32px] md:text-[60px] leading-[50px] md:leading-[80px] font-semibold">
