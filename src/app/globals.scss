@@ -141,12 +141,32 @@
   padding-left: 35px;
   outline: none;
 }
+
 .customInput::placeholder {
   color: black;
   opacity: 1; /* Firefox */
   font-size: 18px;
   font-weight: 400;
 }
+@media only screen and (max-width: 600px) {
+  .customInput {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
+    background-color: white;
+    border-radius: 36px;
+    max-width: 275px;
+    width: 100%;
+    height: 34px;
+    padding-left: 19px;
+    outline: none;
+  }
+  .customInput::placeholder {
+    color: black;
+    opacity: 1; /* Firefox */
+    font-size: 12px !important;
+    font-weight: 400;
+  }
+}
+
 .dark-btn {
   border-radius: 36px;
 }

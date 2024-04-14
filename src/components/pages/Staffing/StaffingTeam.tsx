@@ -7,7 +7,7 @@ function StaffingTeam() {
         <div className="md:py-24 py-10">
           <div className="grid grid-cols-1 md:grid-cols-2">
             <div className=" order-last md:order-none">
-              <div className=" flex justify-center gap-4 flex-col md:flex-row">
+              <div className=" flex justify-center gap-4 flex-row">
                 <div className=" mt-10 md:mt-[92px]">
                   <img
                     src="/images/agile-team-1.svg"

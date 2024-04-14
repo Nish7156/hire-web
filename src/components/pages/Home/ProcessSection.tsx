@@ -92,15 +92,15 @@ function ProcessSection() {
               <div className="flex flex-col  justify-center items-center">
                 {ProcessSteps.map((step, index) => (
                   <React.Fragment key={index}>
-                    <div className="w-[72px] h-[72px] rounded-full bg-border relative">
-                      <div className="w-[56px] h-[56px] rounded-full gradiant-bg  absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ">
+                    <div className="w-[64px] h-[64px] rounded-full bg-border relative">
+                      <div className="w-[49px] h-[49px] rounded-full gradiant-bg  absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ">
                         <span className="absolute text-white top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[32px] font-semibold">
                           {step.step}
                         </span>
                       </div>
                     </div>
                     {index !== stepPositions.length - 1 && (
-                      <div className="h-[130px] w-[4px] bg-border"></div>
+                      <div className="h-[140px] w-[4px] bg-border"></div>
                     )}
                   </React.Fragment>
                 ))}

@@ -33,7 +33,10 @@ function StaffingServices() {
     },
   ];
   return (
-    <div>
+    <div className=" relative">
+      {/* <div className=" absolute  top-[-1700px] hidden md:block ">
+        <img src="/bg/two-dots-bg.svg" alt="" />
+      </div> */}
       <div className="container">
         <div className="flex justify-center ">
           <h2 className="md-text md:max-w-[799px] text-center">
@@ -50,7 +53,7 @@ function StaffingServices() {
             </p>
           </div>
         </div>
-        <div className="mt-12 md:px-24">
+        <div className="mt-12 md:px-24 relative">
           <div className="grid lg:grid-cols-2 grid-cols-1 gap-6 md:gap-14">
             {StaffingServicesData.map((data: any, index: number) => {
               return (

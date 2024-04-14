@@ -108,7 +108,7 @@ export const ServiceDataList = [
     ]
   },
   {
-    bg:'bg-border',
+    bg:'bg-gray-100',
     serviceTitle: "Quality Assurance",
     serviceDescription:
       "Quality can’t be added to finished products. That’s why our agile quality assurance methods include both manual and automated testing throughout the development process, ensuring a perfect final product.",
