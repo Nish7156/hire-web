@@ -15,7 +15,7 @@ function page() {
       {ServiceDataList.map((data: any, index: any) => {
         return (
           <div key={index} className="">
-            <FeactursSection  data={data}/>
+            <FeactursSection data={data} />
           </div>
         );
       })}

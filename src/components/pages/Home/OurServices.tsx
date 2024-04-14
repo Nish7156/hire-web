@@ -18,7 +18,9 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
     <h3 className="mt-4 mr-5 text-3xl text-center md:text-left font-medium text-black max-md:mr-2.5">
       {title}
     </h3>
-    <p className="mt-4 text-sm text-neutral-700 text-center md:text-left">{description}</p>
+    <p className="mt-4 text-sm text-neutral-700 text-center md:text-left">
+      {description}
+    </p>
   </div>
 );
 
@@ -62,7 +64,7 @@ const services = [
 
 function OurServices() {
   return (
-    <>
+    <div className=" relative">
       <div className="container pt-6 pb-4 md:pb-14 md:pt-0 ">
         <h2 className="self-start md:mt-12  text-5xl font-medium text-black capitalize max-md:ml-2.5 max-md:text-4xl">
           Our Services
@@ -84,7 +86,10 @@ function OurServices() {
           </div>
         </div>
       </div>
-    </>
+      <div className=" absolute bottom-0 w-full h-auto">
+        <img src="/bg/movingWave.svg" alt="" />
+      </div>
+    </div>
   );
 }
 

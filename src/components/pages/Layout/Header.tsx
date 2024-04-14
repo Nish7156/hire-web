@@ -1,5 +1,6 @@
 //@ts-nocheck
 "use client";
+import MenuIcon from "@/components/Utility/icons/MenuIcon";
 import CustomButton from "@/components/elements/CustomButton";
 import { Menus } from "@/components/lib/constant";
 import Link from "next/link";
@@ -10,8 +11,6 @@ const Header = () => {
   const pathname = usePathname();
   const [showBorderShadow, setShowBorderShadow] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isHovered, setIsHovered] = useState(false);
-  const [isHoveredText, setIsHoveredText] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -58,14 +57,7 @@ const Header = () => {
               className="navbar-burger flex items-center text-blue-600 p-3"
               onClick={toggleMenu}
             >
-              <svg
-                className="block h-7 w-7 fill-current"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title>Mobile menu</title>
-                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-              </svg>
+              <MenuIcon />
             </button>
           </div>
 
@@ -75,25 +67,15 @@ const Header = () => {
             }`}
           >
             {Menus.map((data: any, index: number) => {
-              const isActive = pathname === data.link && !isHovered;
+              const isActive = pathname === data.link;
 
               return (
-                <div
-                  key={index}
-                  className=""
-                  // onMouseEnter={() => setIsHoveredText(true)}
-                  // onMouseLeave={() => setIsHoveredText(false)}
-                >
-                  <MenuItem
-                    title={data.title}
-                    link={data.link}
-                    setIsHovered={setIsHovered}
-                    isHovered={isHovered}
-                  />
+                <div key={index} className="">
+                  <MenuItem title={data.title} link={data.link} />
                   <div className=" flex justify-center">
                     <div
                       className={`w-1 rounded-full h-1 ${
-                        isActive || isHoveredText ? "gradiant-dot" : "bg-white"
+                        isActive ? "gradiant-dot" : "bg-white"
                       }`}
                     ></div>
                   </div>
@@ -113,7 +95,10 @@ const Header = () => {
             }`}
           >
             {/* Close button */}
-            <div className="flex items-center mb-8">
+            <div className="flex items-center justify-between mb-8">
+              <div className="">
+                <Logo/>
+              </div>
               <button className="navbar-close" onClick={toggleMenu}>
                 <svg
                   className="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
@@ -144,9 +129,9 @@ const Header = () => {
             </ul>
 
             {/* Sign in and Sign up buttons */}
-            <div className="mt-auto">
+            {/* <div className="mt-auto">
               <CustomButton>Contact Us</CustomButton>
-            </div>
+            </div> */}
           </div>
         </nav>
       </div>
@@ -195,10 +180,8 @@ const MenuItem = ({ title, link, setIsHovered, isHovered }: any) => {
         <Link
           className={`md:mx-4 mx-0 text-xl md:text-lg font-normal text-black hover:text-gray-500 ${
             isActive ? "leverage-expertise" : ""
-          } ${isHovered ? "leverage-expertise" : ""}`}
+          } `}
           href={`${link}`}
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
         >
           {title}
         </Link>

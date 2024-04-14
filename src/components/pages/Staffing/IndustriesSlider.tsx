@@ -1,17 +1,48 @@
+//@ts-nocheck
 "use client";
+import RightArrow from "@/components/Utility/icons/RightArrow";
 import Image from "next/image";
 import React from "react";
 import Slider from "react-slick";
 function IndustriesSlider() {
+  function SampleNextArrow(props: {
+    className?: any;
+    style?: any;
+    onClick?: any;
+  }) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={
+          " w-[48px] h-[48px] rounded-full bg-white  cursor-pointer absolute top-1/2 right-0 transform -translate-x-1/2 -translate-y-1/2"
+        }
+        style={{ ...style, display: "block" }}
+        onClick={onClick}
+      >
+        <div className=" justify-center flex items-center h-full">
+          <RightArrow />
+        </div>
+      </div>
+    );
+  }
+
   const SliderData = [1, 2, 3, 4, 5, 6, 6];
   var settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 300,
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
+    nextArrow: (
+      <SampleNextArrow
+        className={undefined}
+        style={undefined}
+        onClick={undefined}
+      />
+    ),
+    prevArrow: false,
     responsive: [
       {
         breakpoint: 1024,
@@ -52,11 +83,15 @@ function IndustriesSlider() {
         </div>
         <div className=" pt-10 md:pt-[88px]">
           <Slider {...settings}>
-            {SliderData.map((data: any,index:number) => {
+            {SliderData.map((data: any, index: number) => {
               return (
                 <div className="slider-card" key={index}>
                   <div className=" relative md:mr-4 md:h-[257px]">
-                    <img src="/slider/slide-1.svg" alt="" className="w-full md:w-auto" />
+                    <img
+                      src="/slider/slide-1.svg"
+                      alt=""
+                      className="w-full md:w-auto"
+                    />
                     <div className=" bg-border-100 slider-bottom-card  absolute right-0 left-0 bottom-0 rounded-br-xl rounded-bl-xl  py-[18px] px-6">
                       <div className=" flex items-center">
                         <div className="w-[45px] h-[45px] bg-white rounded-full relative mr-6">
