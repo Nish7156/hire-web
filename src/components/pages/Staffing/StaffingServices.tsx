@@ -34,9 +34,9 @@ function StaffingServices() {
   ];
   return (
     <div className=" relative">
-      {/* <div className=" absolute  top-[-1700px] hidden md:block ">
-        <img src="/bg/two-dots-bg.svg" alt="" />
-      </div> */}
+      <div className=" absolute   hidden md:block ">
+        <img src="/bg/bg-gradient.svg" alt="" />
+      </div>
       <div className="container">
         <div className="flex justify-center ">
           <h2 className="md-text md:max-w-[799px] text-center">
@@ -58,7 +58,7 @@ function StaffingServices() {
             {StaffingServicesData.map((data: any, index: number) => {
               return (
                 <div className="" key={index}>
-                  <div className="card-shadow py-7 px-[43px] h-auto lg:h-[400px]">
+                  <div className="card-shadow py-7 px-6 md:px-[43px] h-auto lg:h-[400px]">
                     <div className="flex justify-center">
                       <StaffingIcon1 />
                     </div>

@@ -74,9 +74,9 @@ function Footer() {
           </div>
         </div>
         <div className="container">
-          <div className="flex py-[30px] justify-between flex-col md:flex-row items-center">
+          <div className="flex py-[30px] justify-between flex-col sm:flex-row items-center">
             <div className="">
-              <p>©Copyright 2023.All Rights Reserved</p>
+              <p className="text-[16px]">©Copyright 2023.All Rights Reserved</p>
             </div>
             <div className=" mt-4 md:m-0">
               <div className=" flex gap-4">

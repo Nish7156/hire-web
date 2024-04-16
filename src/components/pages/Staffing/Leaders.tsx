@@ -33,7 +33,9 @@ function Leaders() {
                           <h1 className="text-[24px] font-semibold">
                             {data.title}
                           </h1>
-                          <p className="text-center">{data.description}</p>
+                          <p className="text-center text-[#717171] font-normal">
+                            {data.description}
+                          </p>
                         </div>
                       </div>
                     );
@@ -55,7 +57,7 @@ function Leaders() {
                           <h1 className="text-[24px] font-semibold">
                             {data.title}
                           </h1>
-                          <p className="text-center">{data.description}</p>
+                          <p className="text-center text-[#717171] font-normal">{data.description}</p>
                         </div>
                       </div>
                     );
@@ -77,7 +79,7 @@ function Leaders() {
                           <h1 className="text-[24px] font-semibold">
                             {data.title}
                           </h1>
-                          <p className="text-center">{data.description}</p>
+                          <p className="text-center text-[#717171] font-normal">{data.description}</p>
                         </div>
                       </div>
                     );

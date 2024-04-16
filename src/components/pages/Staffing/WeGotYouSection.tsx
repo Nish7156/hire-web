@@ -23,7 +23,7 @@ function WeGotYouSection() {
       <div className="container ">
         <div className="pt-10 pb-10 md:pb-[102px]">
           <div className="flex justify-center">
-            <h2 className="md-text">Whatever you need... We’ve got you</h2>
+            <h2 className="md-text text-center">Whatever you need We’ve got you</h2>
           </div>
           <div className="mt-10 md:mt-[103px]">
             <div className="grid md:grid-cols-3 grid-cols-1 gap-24">

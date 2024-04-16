@@ -59,7 +59,10 @@ const ValuesSection: React.FC = () => {
   ];
 
   return (
-    <>
+    <div className=" relative">
+      <div className=" absolute top-0 bottom-0 left-0 right-0">
+        <img src="/bg/hero-bg.svg" alt="" />
+      </div>
       <div className="flex flex-col">
         <div className="flex py-10 md:py-[74px] flex-col justify-center items-start  w-full text-5xl font-semibold backdrop-blur-[25px] bg-[linear-gradient(126deg,#C1EBF3_0%,#E4D0F4_100%)] text-neutral-700  max-md:max-w-full max-md:text-4xl">
           <div className="container relative">
@@ -87,7 +90,7 @@ const ValuesSection: React.FC = () => {
         </div>
       </div>
       <div className="md:h-[300px] bg-pink"></div>
-    </>
+    </div>
   );
 };
 export default ValuesSection;

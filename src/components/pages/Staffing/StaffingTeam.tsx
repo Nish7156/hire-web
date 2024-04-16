@@ -2,7 +2,13 @@ import React from "react";
 
 function StaffingTeam() {
   return (
-    <div className=" bg-pink">
+    <div className=" bg-pink relative">
+      <div className="absolute lefft-0 top-0">
+        <img src="/bg/staffing-curve-1.svg" alt="" />
+      </div>
+      <div className="absolute right-0 top-[4%]">
+        <img src="/bg/staffing-curve-2.svg" alt="" />
+      </div>
       <div className="container">
         <div className="md:py-24 py-10">
           <div className="grid grid-cols-1 md:grid-cols-2">
