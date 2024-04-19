@@ -15,14 +15,14 @@ const HeroSection: React.FC = () => {
                   Leverage Expertise
                 </p>
               </div>
-              <p className=" lg:max-w-[445px] mt-6">
+              <p className=" lg:max-w-[445px] text-[18px] text-center md:text-left mt-6 text-textLight-100">
                 Lorem ipsum dolor sit amet consectetur. Purus magna quam gravida
                 feugiat orci Lorem ipsum dolor sit amet consectetur. Purus magna
                 quam gravida feugiat orci{" "}
               </p>
               <div className=" mt-10 lg:mt-[38px] flex justify-center md:justify-start">
                 <div className="  max-w-[181px] md:max-w-[228px]">
-                  <CustomButton>Contact Us</CustomButton>
+                  <CustomButton isContact >Contact Us</CustomButton>
                 </div>
               </div>
             </div>

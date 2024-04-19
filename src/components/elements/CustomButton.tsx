@@ -1,9 +1,17 @@
 "use client";
+import { useRouter } from "next/navigation";
 import React from "react";
 
-export default function CustomButton({ children, outline }: any) {
+export default function CustomButton({
+  children,
+  outline,
+  isContact,
+  onClick,
+}: any) {
+  const router = useRouter();
+
   function handleClick(params: any) {
-    console.log("Hii");
+    isContact ? router.push("/contact-us") : onClick;
   }
   return (
     <button

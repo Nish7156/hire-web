@@ -32,7 +32,7 @@ export const QuestionsSection: React.FC<QuestionsSectionProps> = ({
         )}
         <div className=" mt-4 md:mt-8 grid grid-cols-1 md:grid-cols-3">
           <div className=""></div>
-          <CustomButton>{buttonText}</CustomButton>
+          <CustomButton isContact >{buttonText}</CustomButton>
           <div className=""></div>
         </div>
       </div>

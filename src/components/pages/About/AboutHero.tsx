@@ -43,8 +43,11 @@ function AboutHero() {
                   Lorem ipsum dolor sit amet consectetur. Purus magna quam
                   gravida feugiat orci volutpat ullamcorper congue vitae.
                 </p>
-                <div className="pt-[63px] grid grid-cols-1 md:grid-cols-2">
-                  <CustomButton>Contact Us</CustomButton>
+                <div className="flex justify-center md:justify-start">
+                <div className="pt-[63px] max-w-[181px] md:max-w-[228px]">
+                  <CustomButton isContact>Contact Us</CustomButton>
+                </div>
+
                 </div>
               </div>
               <div className="mt-6 md:mt-0">

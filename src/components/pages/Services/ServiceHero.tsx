@@ -36,8 +36,11 @@ function ServiceHero() {
               feugiat orci Lorem ipsum dolor sit amet consectetur.
             </p>
           </div>
-          <div className=" pt-8 grid grid-cols-1 md:grid-cols-2">
-            <CustomButton>Contact Us</CustomButton>
+          <div className="flex justify-center md:justify-start">
+          <div className=" pt-8 max-w-[181px] md:max-w-[228px]">
+            <CustomButton isContact>Contact Us</CustomButton>
+          </div>
+
           </div>
         </div>
       </div>

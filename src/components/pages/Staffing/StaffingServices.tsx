@@ -1,8 +1,11 @@
+"use client";
 import StaffingIcon1 from "@/components/Utility/icons/StaffingIcon1";
 import CustomButton from "@/components/elements/CustomButton";
+import { useRouter } from "next/navigation";
 import React from "react";
 
 function StaffingServices() {
+  const router = useRouter();
   const StaffingServicesData = [
     {
       title: "Client Engagement & Requirement Understanding",
@@ -90,7 +93,9 @@ function StaffingServices() {
                   <h3 className="md-text text-center">{data.title}</h3>
                   <p className="pt-[14px] text-center">{data.desc}</p>
                   <div className="flex justify-center px-0 md:px-[88px] mt-5">
-                    <CustomButton>Checkout Product</CustomButton>
+                    <div onClick={() => router.push("/product")} className="">
+                      <CustomButton>Checkout Product</CustomButton>
+                    </div>
                   </div>
                 </div>
               );

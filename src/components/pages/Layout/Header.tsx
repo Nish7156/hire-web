@@ -85,7 +85,7 @@ const Header = () => {
           </ul>
 
           <div className=" max-w-[181px] hidden xl:inline-block lg:ml-auto ">
-            <CustomButton>Contact Us</CustomButton>
+            <CustomButton isContact>Contact Us</CustomButton>
           </div>
 
           {/* w-5/6 */}

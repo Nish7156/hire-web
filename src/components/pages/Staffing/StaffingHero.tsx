@@ -26,8 +26,11 @@ function StaffingHero() {
                 feugiat orci{" "}
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 mt-10">
-              <CustomButton>Contact Us</CustomButton>
+            <div className="flex justify-center md:justify-start">
+            <div className="max-w-[181px] md:max-w-[228px] mt-10">
+              <CustomButton isContact>Contact Us</CustomButton>
+            </div>
+
             </div>
           </div>
           <div className="mt-8 md:mt-0">
