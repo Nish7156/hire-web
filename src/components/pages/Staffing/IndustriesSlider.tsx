@@ -26,7 +26,28 @@ function IndustriesSlider() {
     );
   }
 
-  const SliderData = [1, 2, 3, 4, 5, 6, 6];
+  const SliderData = [
+    {
+      title: "B2B Commerce",
+      img: "/images/slider-1.svg",
+      icon: "/images/slider-1-icon.svg",
+    },
+    {
+      title: "Real Estate",
+      img: "/images/slider-2.svg",
+      icon: "/images/slider-2-icon.svg",
+    },
+    {
+      title: "Healthcare",
+      img: "/images/slider-3.svg",
+      icon: "/images/slider-3-icon.svg",
+    },
+    {
+      title: "Marketing",
+      img: "/images/slider-4.svg",
+      icon: "/images/slider-4-icon.svg",
+    },
+  ];
   var settings = {
     dots: false,
     infinite: true,
@@ -71,7 +92,7 @@ function IndustriesSlider() {
   };
   return (
     <div className="bg-pink">
-      <div className="container py-[88px]">
+      <div className=" container md:max-w-full py-[88px]">
         <div className="flex justify-center">
           <h2 className="md-text">Industries we serve</h2>
         </div>
@@ -85,25 +106,26 @@ function IndustriesSlider() {
           <Slider {...settings}>
             {SliderData.map((data: any, index: number) => {
               return (
-                <div className="slider-card" key={index}>
+                <div className="slider-card w-[296px]" key={index}>
                   <div className=" relative md:mr-4 md:h-[257px]">
                     <img
-                      src="/slider/slide-1.svg"
+                      src={`${data.img}`}
                       alt=""
-                      className="w-full md:w-auto"
+                      className="w-full  rounded-xl"
+                      style={{borderRadius:'25px'}}
                     />
-                    <div className=" bg-border-100 slider-bottom-card  absolute right-0 left-0 bottom-0 rounded-br-xl rounded-bl-xl  py-[18px] px-6">
+                    <div className=" bg-border-100 slider-bottom-card rounded-b-xl  absolute right-0 left-0 bottom-[-10px] rounded-br-xl rounded-bl-xl  py-[18px] px-6">
                       <div className=" flex items-center">
                         <div className="w-[45px] h-[45px] bg-white rounded-full relative mr-6">
                           <Image
                             height={30}
                             width={30}
-                            src={"/icons/slider-1-icon.svg"}
+                            src={`${data.icon}`}
                             alt="icon"
                             className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
                           />
                         </div>
-                        <p className="text-lg font-medium">B2B Commerce</p>
+                        <p className="text-lg font-medium">{data.title}</p>
                       </div>
                     </div>
                   </div>
