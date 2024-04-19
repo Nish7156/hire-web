@@ -112,10 +112,10 @@ function ProcessSection() {
                   return (
                     <div className=" max-w-[256px]" key={data.step}>
                       <div className="px-2 py-4">
-                        <div className="font-bold text-xl mb-2">
+                        <div className=" font-normal text-xl mb-2">
                           {data.title}
                         </div>
-                        <p className="text-base">{data.desc}</p>
+                        <p className="text-base font-[300]">{data.desc}</p>
                       </div>
                     </div>
                   );

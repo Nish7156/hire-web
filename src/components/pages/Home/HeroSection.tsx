@@ -20,8 +20,8 @@ const HeroSection: React.FC = () => {
                 feugiat orci Lorem ipsum dolor sit amet consectetur. Purus magna
                 quam gravida feugiat orci{" "}
               </p>
-              <div className=" mt-10 lg:mt-[38px]">
-                <div className=" grid grid-cols-1 lg:grid-cols-2">
+              <div className=" mt-10 lg:mt-[38px] flex justify-center md:justify-start">
+                <div className="  max-w-[181px] md:max-w-[228px]">
                   <CustomButton>Contact Us</CustomButton>
                 </div>
               </div>

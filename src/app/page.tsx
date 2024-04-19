@@ -13,7 +13,9 @@ export default function Home() {
       <HeroSection />
       <ValuesSection/>
       <OurServices />
-      <ProcessSection/>
+     <div className="mt-10">
+     <ProcessSection/>
+     </div>
        <IndustriesSlider/>
       <AgileTeam />
       <StillHaveQuestions />

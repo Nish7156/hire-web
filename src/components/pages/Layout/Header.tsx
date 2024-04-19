@@ -84,7 +84,7 @@ const Header = () => {
             })}
           </ul>
 
-          <div className="hidden xl:inline-block lg:ml-auto ">
+          <div className=" max-w-[181px] hidden xl:inline-block lg:ml-auto ">
             <CustomButton>Contact Us</CustomButton>
           </div>
 

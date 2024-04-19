@@ -64,7 +64,7 @@ const ValuesSection: React.FC = () => {
         <img src="/bg/hero-bg.svg" alt="" />
       </div>
       <div className="flex flex-col">
-        <div className="flex py-10 md:py-[74px] flex-col justify-center items-start  w-full text-5xl font-semibold backdrop-blur-[25px] bg-[linear-gradient(126deg,#C1EBF3_0%,#E4D0F4_100%)] text-neutral-700  max-md:max-w-full max-md:text-4xl">
+        <div className="flex py-10 md:py-[74px] flex-col justify-center items-start  w-full text-5xl font-semibold backdrop-blur-[25px] md:bg-[linear-gradient(126deg,#C1EBF3_0%,#E4D0F4_100%)] text-neutral-700  max-md:max-w-full max-md:text-4xl">
           <div className="container relative">
             <div className=" text-black  text-center md:text-left md-text mb-4 md:mb-24 font-semibold hero-banner-text leading-[50px] md:leading-[72px]">
               <span className="leverage-expertise  leading-[50px] md:leading-[72px] ">

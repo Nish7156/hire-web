@@ -10,7 +10,7 @@ export default function CustomButton({ children, outline }: any) {
       onClick={handleClick}
       className={`${
         outline ? "outline-btn" : "custom-buttom"
-      } py-[13px] px-[47px] w-full font-medium text-lg`}
+      } py-[11px] px-[40px] w-full font-medium text-lg`}
     >
       <p className="btn-text"> {children}</p>
     </button>

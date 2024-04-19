@@ -16,7 +16,7 @@ export const QuestionsSection: React.FC<QuestionsSectionProps> = ({
   return (
     <section className="flex justify-center items-center px-8 md:px-16 py-8 md:py-14 text-center text-black bg-[linear-gradient(126deg,#C1EBF3_0%,#E4D0F4_100%)] rounded-[32px] max-md:px-5">
       <div className="flex flex-col items-center max-w-full w-[716px]">
-        <h2 className="text-4xl font-semibold max-md:max-w-full">{title}</h2>
+        <h2 className=" text-3xl md:text-4xl font-semibold max-md:max-w-full">{title}</h2>
         {description && (
           <p className="self-stretch mt-6 text-xl max-md:max-w-full">
             {description}

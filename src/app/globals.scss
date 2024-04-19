@@ -100,7 +100,7 @@
   @apply text-lg font-normal text-textLight-100;
 }
 .md-text {
-  @apply md:text-[48px]  font-semibold md:leading-[65px] text-3xl;
+  @apply md:text-[48px]  font-medium md:leading-[65px] text-3xl;
 }
 
 .gradient-text {

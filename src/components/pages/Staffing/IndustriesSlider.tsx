@@ -97,7 +97,7 @@ function IndustriesSlider() {
           <h2 className="md-text">Industries we serve</h2>
         </div>
         <div className="flex justify-center ">
-          <p className=" md:max-w-[503px] mt-3  text-center ">
+          <p className=" md:max-w-[503px] mt-3  text-center  font-[300]">
             Lorem ipsum dolor sit amet consectetur. Tristique velit dolor et non
             euismod fringilla congue ornare sapien.{" "}
           </p>
